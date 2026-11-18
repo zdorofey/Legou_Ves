@@ -4,6 +4,7 @@ obj/
 **/build/
 **/dist/
 **/dist-*/
+**/verify-build/
 **/config.json
 **/config.json.tmp
 **/*.zip
