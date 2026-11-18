@@ -3,15 +3,15 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$branchDir = (Resolve-Path $PSScriptRoot).Path
-$workspaceDir = (Resolve-Path (Join-Path $branchDir '..\..')).Path
-$appDir = Join-Path $branchDir 'app'
+$projectDir = (Resolve-Path $PSScriptRoot).Path
+$workspaceDir = (Resolve-Path (Join-Path $projectDir '..')).Path
+$appDir = Join-Path $projectDir 'app'
 $distDir = if ([System.IO.Path]::IsPathRooted($OutputDirectory)) {
     $OutputDirectory
 } else {
-    Join-Path $branchDir $OutputDirectory
+    Join-Path $projectDir $OutputDirectory
 }
-$buildDir = Join-Path $branchDir 'build'
+$buildDir = Join-Path $projectDir 'build'
 
 $localPython = Join-Path $workspaceDir '.tools\python311\python.exe'
 if (Test-Path $localPython) {
@@ -31,7 +31,7 @@ New-Item -ItemType Directory -Force -Path $distDir, $buildDir | Out-Null
 $common = @('-m', 'PyInstaller', '--clean', '--noconfirm', '--onefile', '--windowed',
     '--specpath', (Join-Path $buildDir 'specs'))
 
-Push-Location $branchDir
+Push-Location $projectDir
 try {
     & $pythonExe @pythonPrefix @common `
         '--name' 'ScaleSetup' `
