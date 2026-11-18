@@ -1,0 +1,14 @@
+bin/
+obj/
+.tools/
+**/build/
+**/dist/
+**/dist-*/
+**/config.json
+**/config.json.tmp
+**/*.zip
+**/vesLego1.exe_extracted/
+
+/tmp/
+**/.venv/
+

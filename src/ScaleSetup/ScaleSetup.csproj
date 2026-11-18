@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScaleCore\ScaleCore.csproj" />
+    <Content Include="..\..\bb\Логотип Легоу вертикаль на светлом.png" Link="Assets\Setup\logo.png" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

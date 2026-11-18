@@ -1,0 +1,2372 @@
+
+### <module> at line 1
+# varnames: ()
+# names: ('__doc__', '__future__', 'annotations', 'bleak.args', 'SizedBuffer', '__author__', '__email__', 'asyncio', 'functools', 'inspect', 'logging', 'os', 'sys', 'uuid', 'collections.abc', 'AsyncGenerator', 'Awaitable', 'Callable', 'Iterable', 'types', 'TracebackType', 'typing', 'Any', 'Literal', 'Optional', 'TypedDict', 'Union', 'cast', 'overload', 'bleak._compat', 'Never', 'Self', 'Unpack', 'assert_never', 'timeout', 'async_timeout', 'bleak.args.bluez', 'BlueZNotifyArgs', 'BlueZScannerArgs', 'bleak.args.corebluetooth', 'CBScannerArgs', 'CBStartNotifyArgs', 'bleak.args.winrt', 'WinRTClientArgs', 'bleak.backends', 'BleakBackend', 'bleak.backends.characteristic', 'BleakGATTCharacteristic', 'bleak.backends.client', 'BaseBleakClient', 'get_platform_client_backend_type', 'bleak.backends.descriptor', 'BleakGATTDescriptor', 'bleak.backends.device', 'BLEDevice', 'bleak.backends.scanner', 'AdvertisementData', 'AdvertisementDataCallback', 'AdvertisementDataFilter', 'BaseBleakScanner', 'get_platform_scanner_backend_type', 'bleak.backends.service', 'BleakGATTServiceCollection', 'bleak.exc', 'BleakCharacteristicNotFoundError', 'BleakError', 'bleak.uuids', 'normalize_uuid_str', 'getLogger', '__name__', '_logger', 'addHandler', 'NullHandler', 'bool', 'environ', 'get', 'FORMAT', 'StreamHandler', 'stderr', 'handler', 'setLevel', 'DEBUG', 'setFormatter', 'Formatter', 'set', '_background_tasks', '__annotations__', 'BleakScanner', '_resolve_characteristic', '_resolve_descriptor', 'BleakClient')
+# const[0]: 'Top-level package for bleak.'
+# const[4]: 'Henrik Blidh'
+# const[5]: 'henrik.blidh@gmail.com'
+# const[24]: 'BLEAK_LOGGING'
+# const[26]: '%(asctime)-15s %(name)-8s %(threadName)s %(levelname)s: %(message)s'
+# const[28]: 'set[asyncio.Task[None]]'
+# const[29]: '_background_tasks'
+# const[31]: 'BleakScanner'
+# const[32]: 'char_specifier'
+# const[33]: 'Union[BleakGATTCharacteristic, int, str, uuid.UUID]'
+# const[34]: 'services'
+# const[35]: 'BleakGATTServiceCollection'
+# const[36]: 'return'
+# const[37]: 'BleakGATTCharacteristic'
+# const[39]: 'desc_specifier'
+# const[40]: 'Union[BleakGATTDescriptor, int]'
+# const[41]: 'BleakGATTDescriptor'
+# const[44]: 'BleakClient'
+  0           0 RESUME                   0
+
+  1           2 SETUP_ANNOTATIONS
+              4 LOAD_CONST               0 ('Top-level package for bleak.')
+              6 STORE_NAME               0 (__doc__)
+
+  3           8 LOAD_CONST               1 (0)
+             10 LOAD_CONST               2 (('annotations',))
+             12 IMPORT_NAME              1 (__future__)
+             14 IMPORT_FROM              2 (annotations)
+             16 STORE_NAME               2 (annotations)
+             18 POP_TOP
+
+  5          20 LOAD_CONST               1 (0)
+             22 LOAD_CONST               3 (('SizedBuffer',))
+             24 IMPORT_NAME              3 (bleak.args)
+             26 IMPORT_FROM              4 (SizedBuffer)
+             28 STORE_NAME               4 (SizedBuffer)
+             30 POP_TOP
+
+  7          32 LOAD_CONST               4 ('Henrik Blidh')
+             34 STORE_NAME               5 (__author__)
+
+  8          36 LOAD_CONST               5 ('henrik.blidh@gmail.com')
+             38 STORE_NAME               6 (__email__)
+
+ 10          40 LOAD_CONST               1 (0)
+             42 LOAD_CONST               6 (None)
+             44 IMPORT_NAME              7 (asyncio)
+             46 STORE_NAME               7 (asyncio)
+
+ 11          48 LOAD_CONST               1 (0)
+             50 LOAD_CONST               6 (None)
+             52 IMPORT_NAME              8 (functools)
+             54 STORE_NAME               8 (functools)
+
+ 12          56 LOAD_CONST               1 (0)
+             58 LOAD_CONST               6 (None)
+             60 IMPORT_NAME              9 (inspect)
+             62 STORE_NAME               9 (inspect)
+
+ 13          64 LOAD_CONST               1 (0)
+             66 LOAD_CONST               6 (None)
+             68 IMPORT_NAME             10 (logging)
+             70 STORE_NAME              10 (logging)
+
+ 14          72 LOAD_CONST               1 (0)
+             74 LOAD_CONST               6 (None)
+             76 IMPORT_NAME             11 (os)
+             78 STORE_NAME              11 (os)
+
+ 15          80 LOAD_CONST               1 (0)
+             82 LOAD_CONST               6 (None)
+             84 IMPORT_NAME             12 (sys)
+             86 STORE_NAME              12 (sys)
+
+ 16          88 LOAD_CONST               1 (0)
+             90 LOAD_CONST               6 (None)
+             92 IMPORT_NAME             13 (uuid)
+             94 STORE_NAME              13 (uuid)
+
+ 17          96 LOAD_CONST               1 (0)
+             98 LOAD_CONST               7 (('AsyncGenerator', 'Awaitable', 'Callable', 'Iterable'))
+            100 IMPORT_NAME             14 (collections.abc)
+            102 IMPORT_FROM             15 (AsyncGenerator)
+            104 STORE_NAME              15 (AsyncGenerator)
+            106 IMPORT_FROM             16 (Awaitable)
+            108 STORE_NAME              16 (Awaitable)
+            110 IMPORT_FROM             17 (Callable)
+            112 STORE_NAME              17 (Callable)
+            114 IMPORT_FROM             18 (Iterable)
+            116 STORE_NAME              18 (Iterable)
+            118 POP_TOP
+
+ 18         120 LOAD_CONST               1 (0)
+            122 LOAD_CONST               8 (('TracebackType',))
+            124 IMPORT_NAME             19 (types)
+            126 IMPORT_FROM             20 (TracebackType)
+            128 STORE_NAME              20 (TracebackType)
+            130 POP_TOP
+
+ 19         132 LOAD_CONST               1 (0)
+            134 LOAD_CONST               9 (('Any', 'Literal', 'Optional', 'TypedDict', 'Union', 'cast', 'overload'))
+            136 IMPORT_NAME             21 (typing)
+            138 IMPORT_FROM             22 (Any)
+            140 STORE_NAME              22 (Any)
+            142 IMPORT_FROM             23 (Literal)
+            144 STORE_NAME              23 (Literal)
+            146 IMPORT_FROM             24 (Optional)
+            148 STORE_NAME              24 (Optional)
+            150 IMPORT_FROM             25 (TypedDict)
+            152 STORE_NAME              25 (TypedDict)
+            154 IMPORT_FROM             26 (Union)
+            156 STORE_NAME              26 (Union)
+            158 IMPORT_FROM             27 (cast)
+            160 STORE_NAME              27 (cast)
+            162 IMPORT_FROM             28 (overload)
+            164 STORE_NAME              28 (overload)
+            166 POP_TOP
+
+ 21         168 LOAD_CONST               1 (0)
+            170 LOAD_CONST              10 (('Never', 'Self', 'Unpack', 'assert_never'))
+            172 IMPORT_NAME             29 (bleak._compat)
+            174 IMPORT_FROM             30 (Never)
+            176 STORE_NAME              30 (Never)
+            178 IMPORT_FROM             31 (Self)
+            180 STORE_NAME              31 (Self)
+            182 IMPORT_FROM             32 (Unpack)
+            184 STORE_NAME              32 (Unpack)
+            186 IMPORT_FROM             33 (assert_never)
+            188 STORE_NAME              33 (assert_never)
+            190 POP_TOP
+
+ 22         192 LOAD_CONST               1 (0)
+            194 LOAD_CONST              11 (('timeout',))
+            196 IMPORT_NAME             29 (bleak._compat)
+            198 IMPORT_FROM             34 (timeout)
+            200 STORE_NAME              35 (async_timeout)
+            202 POP_TOP
+
+ 23         204 LOAD_CONST               1 (0)
+            206 LOAD_CONST              12 (('BlueZNotifyArgs', 'BlueZScannerArgs'))
+            208 IMPORT_NAME             36 (bleak.args.bluez)
+            210 IMPORT_FROM             37 (BlueZNotifyArgs)
+            212 STORE_NAME              37 (BlueZNotifyArgs)
+            214 IMPORT_FROM             38 (BlueZScannerArgs)
+            216 STORE_NAME              38 (BlueZScannerArgs)
+            218 POP_TOP
+
+ 24         220 LOAD_CONST               1 (0)
+            222 LOAD_CONST              13 (('CBScannerArgs', 'CBStartNotifyArgs'))
+            224 IMPORT_NAME             39 (bleak.args.corebluetooth)
+            226 IMPORT_FROM             40 (CBScannerArgs)
+            228 STORE_NAME              40 (CBScannerArgs)
+            230 IMPORT_FROM             41 (CBStartNotifyArgs)
+            232 STORE_NAME              41 (CBStartNotifyArgs)
+            234 POP_TOP
+
+ 25         236 LOAD_CONST               1 (0)
+            238 LOAD_CONST              14 (('WinRTClientArgs',))
+            240 IMPORT_NAME             42 (bleak.args.winrt)
+            242 IMPORT_FROM             43 (WinRTClientArgs)
+            244 STORE_NAME              43 (WinRTClientArgs)
+            246 POP_TOP
+
+ 26         248 LOAD_CONST               1 (0)
+            250 LOAD_CONST              15 (('BleakBackend',))
+            252 IMPORT_NAME             44 (bleak.backends)
+            254 IMPORT_FROM             45 (BleakBackend)
+            256 STORE_NAME              45 (BleakBackend)
+            258 POP_TOP
+
+ 27         260 LOAD_CONST               1 (0)
+            262 LOAD_CONST              16 (('BleakGATTCharacteristic',))
+            264 IMPORT_NAME             46 (bleak.backends.characteristic)
+            266 IMPORT_FROM             47 (BleakGATTCharacteristic)
+            268 STORE_NAME              47 (BleakGATTCharacteristic)
+            270 POP_TOP
+
+ 28         272 LOAD_CONST               1 (0)
+            274 LOAD_CONST              17 (('BaseBleakClient', 'get_platform_client_backend_type'))
+            276 IMPORT_NAME             48 (bleak.backends.client)
+            278 IMPORT_FROM             49 (BaseBleakClient)
+            280 STORE_NAME              49 (BaseBleakClient)
+            282 IMPORT_FROM             50 (get_platform_client_backend_type)
+            284 STORE_NAME              50 (get_platform_client_backend_type)
+            286 POP_TOP
+
+ 29         288 LOAD_CONST               1 (0)
+            290 LOAD_CONST              18 (('BleakGATTDescriptor',))
+            292 IMPORT_NAME             51 (bleak.backends.descriptor)
+            294 IMPORT_FROM             52 (BleakGATTDescriptor)
+            296 STORE_NAME              52 (BleakGATTDescriptor)
+            298 POP_TOP
+
+ 30         300 LOAD_CONST               1 (0)
+            302 LOAD_CONST              19 (('BLEDevice',))
+            304 IMPORT_NAME             53 (bleak.backends.device)
+            306 IMPORT_FROM             54 (BLEDevice)
+            308 STORE_NAME              54 (BLEDevice)
+            310 POP_TOP
+
+ 31         312 LOAD_CONST               1 (0)
+            314 LOAD_CONST              20 (('AdvertisementData', 'AdvertisementDataCallback', 'AdvertisementDataFilter', 'BaseBleakScanner', 'get_platform_scanner_backend_type'))
+            316 IMPORT_NAME             55 (bleak.backends.scanner)
+            318 IMPORT_FROM             56 (AdvertisementData)
+            320 STORE_NAME              56 (AdvertisementData)
+            322 IMPORT_FROM             57 (AdvertisementDataCallback)
+            324 STORE_NAME              57 (AdvertisementDataCallback)
+            326 IMPORT_FROM             58 (AdvertisementDataFilter)
+            328 STORE_NAME              58 (AdvertisementDataFilter)
+            330 IMPORT_FROM             59 (BaseBleakScanner)
+            332 STORE_NAME              59 (BaseBleakScanner)
+            334 IMPORT_FROM             60 (get_platform_scanner_backend_type)
+            336 STORE_NAME              60 (get_platform_scanner_backend_type)
+            338 POP_TOP
+
+ 38         340 LOAD_CONST               1 (0)
+            342 LOAD_CONST              21 (('BleakGATTServiceCollection',))
+            344 IMPORT_NAME             61 (bleak.backends.service)
+            346 IMPORT_FROM             62 (BleakGATTServiceCollection)
+            348 STORE_NAME              62 (BleakGATTServiceCollection)
+            350 POP_TOP
+
+ 39         352 LOAD_CONST               1 (0)
+            354 LOAD_CONST              22 (('BleakCharacteristicNotFoundError', 'BleakError'))
+            356 IMPORT_NAME             63 (bleak.exc)
+            358 IMPORT_FROM             64 (BleakCharacteristicNotFoundError)
+            360 STORE_NAME              64 (BleakCharacteristicNotFoundError)
+            362 IMPORT_FROM             65 (BleakError)
+            364 STORE_NAME              65 (BleakError)
+            366 POP_TOP
+
+ 40         368 LOAD_CONST               1 (0)
+            370 LOAD_CONST              23 (('normalize_uuid_str',))
+            372 IMPORT_NAME             66 (bleak.uuids)
+            374 IMPORT_FROM             67 (normalize_uuid_str)
+            376 STORE_NAME              67 (normalize_uuid_str)
+            378 POP_TOP
+
+ 42         380 PUSH_NULL
+            382 LOAD_NAME               10 (logging)
+            384 LOAD_ATTR               68 (getLogger)
+            394 LOAD_NAME               69 (__name__)
+            396 PRECALL                  1
+            400 CALL                     1
+            410 STORE_NAME              70 (_logger)
+
+ 43         412 LOAD_NAME               70 (_logger)
+            414 LOAD_METHOD             71 (addHandler)
+            436 PUSH_NULL
+            438 LOAD_NAME               10 (logging)
+            440 LOAD_ATTR               72 (NullHandler)
+            450 PRECALL                  0
+            454 CALL                     0
+            464 PRECALL                  1
+            468 CALL                     1
+            478 POP_TOP
+
+ 44         480 PUSH_NULL
+            482 LOAD_NAME               73 (bool)
+            484 LOAD_NAME               11 (os)
+            486 LOAD_ATTR               74 (environ)
+            496 LOAD_METHOD             75 (get)
+            518 LOAD_CONST              24 ('BLEAK_LOGGING')
+            520 LOAD_CONST              25 (False)
+            522 PRECALL                  2
+            526 CALL                     2
+            536 PRECALL                  1
+            540 CALL                     1
+            550 POP_JUMP_FORWARD_IF_FALSE   132 (to 816)
+
+ 45         552 LOAD_CONST              26 ('%(asctime)-15s %(name)-8s %(threadName)s %(levelname)s: %(message)s')
+            554 STORE_NAME              76 (FORMAT)
+
+ 46         556 PUSH_NULL
+            558 LOAD_NAME               10 (logging)
+            560 LOAD_ATTR               77 (StreamHandler)
+            570 LOAD_NAME               12 (sys)
+            572 LOAD_ATTR               78 (stderr)
+            582 PRECALL                  1
+            586 CALL                     1
+            596 STORE_NAME              79 (handler)
+
+ 47         598 LOAD_NAME               79 (handler)
+            600 LOAD_METHOD             80 (setLevel)
+            622 LOAD_NAME               10 (logging)
+            624 LOAD_ATTR               81 (DEBUG)
+            634 PRECALL                  1
+            638 CALL                     1
+            648 POP_TOP
+
+ 48         650 LOAD_NAME               79 (handler)
+            652 LOAD_METHOD             82 (setFormatter)
+            674 PUSH_NULL
+            676 LOAD_NAME               10 (logging)
+            678 LOAD_ATTR               83 (Formatter)
+            688 LOAD_NAME               76 (FORMAT)
+            690 KW_NAMES                27
+            692 PRECALL                  1
+            696 CALL                     1
+            706 PRECALL                  1
+            710 CALL                     1
+            720 POP_TOP
+
+ 49         722 LOAD_NAME               70 (_logger)
+            724 LOAD_METHOD             71 (addHandler)
+            746 LOAD_NAME               79 (handler)
+            748 PRECALL                  1
+            752 CALL                     1
+            762 POP_TOP
+
+ 50         764 LOAD_NAME               70 (_logger)
+            766 LOAD_METHOD             80 (setLevel)
+            788 LOAD_NAME               10 (logging)
+            790 LOAD_ATTR               81 (DEBUG)
+            800 PRECALL                  1
+            804 CALL                     1
+            814 POP_TOP
+
+ 54     >>  816 PUSH_NULL
+            818 LOAD_NAME               84 (set)
+            820 PRECALL                  0
+            824 CALL                     0
+            834 STORE_NAME              85 (_background_tasks)
+            836 LOAD_CONST              28 ('set[asyncio.Task[None]]')
+            838 LOAD_NAME               86 (__annotations__)
+            840 LOAD_CONST              29 ('_background_tasks')
+            842 STORE_SUBSCR
+
+ 57         846 PUSH_NULL
+            848 LOAD_BUILD_CLASS
+            850 LOAD_CONST              30 (<code object BleakScanner at 0x000002704159C0A0, file "bleak\__init__.py", line 57>)
+            852 MAKE_FUNCTION            0
+            854 LOAD_CONST              31 ('BleakScanner')
+            856 PRECALL                  2
+            860 CALL                     2
+            870 STORE_NAME              87 (BleakScanner)
+
+400         872 LOAD_CONST              45 (('char_specifier', 'Union[BleakGATTCharacteristic, int, str, uuid.UUID]', 'services', 'BleakGATTServiceCollection', 'return', 'BleakGATTCharacteristic'))
+            874 LOAD_CONST              38 (<code object _resolve_characteristic at 0x00000270418FFD70, file "bleak\__init__.py", line 400>)
+            876 MAKE_FUNCTION            4 (annotations)
+            878 STORE_NAME              88 (_resolve_characteristic)
+
+416         880 LOAD_CONST              46 (('desc_specifier', 'Union[BleakGATTDescriptor, int]', 'services', 'BleakGATTServiceCollection', 'return', 'BleakGATTDescriptor'))
+            882 LOAD_CONST              42 (<code object _resolve_descriptor at 0x0000027041975A70, file "bleak\__init__.py", line 416>)
+            884 MAKE_FUNCTION            4 (annotations)
+            886 STORE_NAME              89 (_resolve_descriptor)
+
+432         888 PUSH_NULL
+            890 LOAD_BUILD_CLASS
+            892 LOAD_CONST              43 (<code object BleakClient at 0x00000270419A9D40, file "bleak\__init__.py", line 432>)
+            894 MAKE_FUNCTION            0
+            896 LOAD_CONST              44 ('BleakClient')
+            898 PRECALL                  2
+            902 CALL                     2
+            912 STORE_NAME              90 (BleakClient)
+            914 LOAD_CONST               6 (None)
+            916 RETURN_VALUE
+
+  ### BleakScanner at line 57
+  # varnames: ()
+  # names: ('__name__', '__module__', '__qualname__', '__doc__', '__init__', 'property', 'backend_id', '__aenter__', '__aexit__', 'start', 'stop', 'advertisement_data', 'TypedDict', 'ExtraArgs', 'overload', 'classmethod', 'discover', 'discovered_devices', 'discovered_devices_and_advertisement_data', 'find_device_by_address', 'find_device_by_name', 'find_device_by_filter')
+  # const[0]: 'BleakScanner'
+  # const[1]: '\n    Interface for Bleak Bluetooth LE Scanners.\n\n    The scanner will listen for BLE advertisements, optionally filtering on advertised services or\n    other conditions, and collect a list of :class:`BLEDevice` objects. These can subsequently be used to\n    connect to the corresponding BLE server.\n\n    A :class:`BleakScanner` can be used as an asynchronous context manager in which case it automatically\n    starts and stops scanning.\n\n    Args:\n        detection_callback:\n            Optional function that will be called each time a device is\n            discovered or advertising data has changed.\n        service_uuids:\n            Optional list of service UUIDs to filter on. Only advertisements\n            containing this advertising data will be received. Required on\n            macOS >= 12.0, < 12.3 (unless you create an app with ``py2app``).\n        scanning_mode:\n            Set to ``"passive"`` to avoid the ``"active"`` scanning mode.\n            Passive scanning is not supported on macOS! Will raise\n            :class:`BleakError` if set to ``"passive"`` on macOS.\n        bluez:\n            Dictionary of arguments specific to the BlueZ backend.\n        cb:\n            Dictionary of arguments specific to the CoreBluetooth backend.\n        backend:\n            Used to override the automatically selected backend (i.e. for a\n            custom backend).\n        **kwargs:\n            Additional args for backwards compatibility.\n\n    .. tip:: The first received advertisement in ``detection_callback`` may or\n        may not include scan response data if the remote device supports it.\n        Be sure to take this into account when handing the callback. For example,\n        the scan response often contains the local name of the device so if you\n        are matching a device based on other data but want to display the local\n        name to the user, be sure to wait for ``adv_data.local_name is not None``.\n\n    .. versionchanged:: 0.15\n        ``detection_callback``, ``service_uuids`` and ``scanning_mode`` are no longer keyword-only.\n        Added ``bluez`` parameter.\n\n    .. versionchanged:: 0.18\n        No longer is alias for backend type and no longer inherits from :class:`BaseBleakScanner`.\n        Added ``backend`` parameter.\n    '
+  # const[3]: 'active'
+  # const[5]: 'detection_callback'
+  # const[6]: 'Optional[AdvertisementDataCallback]'
+  # const[7]: 'service_uuids'
+  # const[8]: 'Optional[list[str]]'
+  # const[9]: 'scanning_mode'
+  # const[10]: "Literal['active', 'passive']"
+  # const[11]: 'bluez'
+  # const[12]: 'BlueZScannerArgs'
+  # const[13]: 'cb'
+  # const[14]: 'CBScannerArgs'
+  # const[15]: 'backend'
+  # const[16]: 'Optional[type[BaseBleakScanner]]'
+  # const[17]: 'kwargs'
+  # const[18]: 'Any'
+  # const[19]: 'return'
+  # const[20]: 'None'
+  # const[22]: 'BleakBackend | str'
+  # const[24]: 'Self'
+  # const[26]: 'exc_type'
+  # const[27]: 'type[BaseException]'
+  # const[28]: 'exc_val'
+  # const[29]: 'BaseException'
+  # const[30]: 'exc_tb'
+  # const[31]: 'TracebackType'
+  # const[35]: 'AsyncGenerator[tuple[BLEDevice, AdvertisementData], None]'
+  # const[38]: 'ExtraArgs'
+  # const[43]: 'timeout'
+  # const[44]: 'float'
+  # const[45]: 'return_adv'
+  # const[46]: 'Literal[False]'
+  # const[47]: 'Unpack[ExtraArgs]'
+  # const[48]: 'list[BLEDevice]'
+  # const[50]: 'Literal[True]'
+  # const[51]: 'dict[str, tuple[BLEDevice, AdvertisementData]]'
+  # const[53]: 'bool'
+  # const[58]: 'device_identifier'
+  # const[59]: 'str'
+  # const[60]: 'Optional[BLEDevice]'
+  # const[62]: 'name'
+  # const[64]: 'filterfunc'
+  # const[65]: 'AdvertisementDataFilter'
+ 57           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('BleakScanner')
+              8 STORE_NAME               2 (__qualname__)
+
+ 58          10 LOAD_CONST               1 ('\n    Interface for Bleak Bluetooth LE Scanners.\n\n    The scanner will listen for BLE advertisements, optionally filtering on advertised services or\n    other conditions, and collect a list of :class:`BLEDevice` objects. These can subsequently be used to\n    connect to the corresponding BLE server.\n\n    A :class:`BleakScanner` can be used as an asynchronous context manager in which case it automatically\n    starts and stops scanning.\n\n    Args:\n        detection_callback:\n            Optional function that will be called each time a device is\n            discovered or advertising data has changed.\n        service_uuids:\n            Optional list of service UUIDs to filter on. Only advertisements\n            containing this advertising data will be received. Required on\n            macOS >= 12.0, < 12.3 (unless you create an app with ``py2app``).\n        scanning_mode:\n            Set to ``"passive"`` to avoid the ``"active"`` scanning mode.\n            Passive scanning is not supported on macOS! Will raise\n            :class:`BleakError` if set to ``"passive"`` on macOS.\n        bluez:\n            Dictionary of arguments specific to the BlueZ backend.\n        cb:\n            Dictionary of arguments specific to the CoreBluetooth backend.\n        backend:\n            Used to override the automatically selected backend (i.e. for a\n            custom backend).\n        **kwargs:\n            Additional args for backwards compatibility.\n\n    .. tip:: The first received advertisement in ``detection_callback`` may or\n        may not include scan response data if the remote device supports it.\n        Be sure to take this into account when handing the callback. For example,\n        the scan response often contains the local name of the device so if you\n        are matching a device based on other data but want to display the local\n        name to the user, be sure to wait for ``adv_data.local_name is not None``.\n\n    .. versionchanged:: 0.15\n        ``detection_callback``, ``service_uuids`` and ``scanning_mode`` are no longer keyword-only.\n        Added ``bluez`` parameter.\n\n    .. versionchanged:: 0.18\n        No longer is alias for backend type and no longer inherits from :class:`BaseBleakScanner`.\n        Added ``backend`` parameter.\n    ')
+             12 STORE_NAME               3 (__doc__)
+
+108          14 NOP
+
+109          16 NOP
+
+110          18 NOP
+
+106          20 LOAD_CONST              67 ((None, None, 'active'))
+
+112          22 BUILD_MAP                0
+
+113          24 BUILD_MAP                0
+
+114          26 LOAD_CONST               2 (None)
+
+106          28 LOAD_CONST               4 (('bluez', 'cb', 'backend'))
+             30 BUILD_CONST_KEY_MAP      3
+             32 LOAD_CONST              68 (('detection_callback', 'Optional[AdvertisementDataCallback]', 'service_uuids', 'Optional[list[str]]', 'scanning_mode', "Literal['active', 'passive']", 'bluez', 'BlueZScannerArgs', 'cb', 'CBScannerArgs', 'backend', 'Optional[type[BaseBleakScanner]]', 'kwargs', 'Any', 'return', 'None'))
+             34 LOAD_CONST              21 (<code object __init__ at 0x00000270419D75A0, file "bleak\__init__.py", line 106>)
+             36 MAKE_FUNCTION            7 (defaults, kwdefaults, annotations)
+             38 STORE_NAME               4 (__init__)
+
+133          40 LOAD_NAME                5 (property)
+
+134          42 LOAD_CONST              69 (('return', 'BleakBackend | str'))
+             44 LOAD_CONST              23 (<code object backend_id at 0x00000270419902A0, file "bleak\__init__.py", line 133>)
+             46 MAKE_FUNCTION            4 (annotations)
+
+133          48 PRECALL                  0
+             52 CALL                     0
+
+134          62 STORE_NAME               6 (backend_id)
+
+145          64 LOAD_CONST              70 (('return', 'Self'))
+             66 LOAD_CONST              25 (<code object __aenter__ at 0x0000027041A03B30, file "bleak\__init__.py", line 145>)
+             68 MAKE_FUNCTION            4 (annotations)
+             70 STORE_NAME               7 (__aenter__)
+
+149          72 LOAD_CONST              71 (('exc_type', 'type[BaseException]', 'exc_val', 'BaseException', 'exc_tb', 'TracebackType', 'return', 'None'))
+             74 LOAD_CONST              32 (<code object __aexit__ at 0x0000027041E24030, file "bleak\__init__.py", line 149>)
+             76 MAKE_FUNCTION            4 (annotations)
+             78 STORE_NAME               8 (__aexit__)
+
+157          80 LOAD_CONST              72 (('return', 'None'))
+             82 LOAD_CONST              33 (<code object start at 0x0000027041E24130, file "bleak\__init__.py", line 157>)
+             84 MAKE_FUNCTION            4 (annotations)
+             86 STORE_NAME               9 (start)
+
+171          88 LOAD_CONST              72 (('return', 'None'))
+             90 LOAD_CONST              34 (<code object stop at 0x0000027041E25830, file "bleak\__init__.py", line 171>)
+             92 MAKE_FUNCTION            4 (annotations)
+             94 STORE_NAME              10 (stop)
+
+175          96 LOAD_CONST              73 (('return', 'AsyncGenerator[tuple[BLEDevice, AdvertisementData], None]'))
+             98 LOAD_CONST              36 (<code object advertisement_data at 0x00000270419DCAB0, file "bleak\__init__.py", line 175>)
+            100 MAKE_FUNCTION            4 (annotations)
+            102 STORE_NAME              11 (advertisement_data)
+
+200         104 PUSH_NULL
+            106 LOAD_BUILD_CLASS
+            108 LOAD_CONST              37 (<code object ExtraArgs at 0x0000027041DE4ED0, file "bleak\__init__.py", line 200>)
+            110 MAKE_FUNCTION            0
+            112 LOAD_CONST              38 ('ExtraArgs')
+            114 LOAD_NAME               12 (TypedDict)
+            116 LOAD_CONST              39 (False)
+            118 KW_NAMES                40
+            120 PRECALL                  4
+            124 CALL                     4
+            134 STORE_NAME              13 (ExtraArgs)
+
+236         136 LOAD_NAME               14 (overload)
+
+237         138 LOAD_NAME               15 (classmethod)
+
+240         140 NOP
+
+238         142 LOAD_CONST              74 ((5.0,))
+
+242         144 LOAD_CONST              39 (False)
+
+238         146 LOAD_CONST              42 (('return_adv',))
+            148 BUILD_CONST_KEY_MAP      1
+            150 LOAD_CONST              75 (('timeout', 'float', 'return_adv', 'Literal[False]', 'kwargs', 'Unpack[ExtraArgs]', 'return', 'list[BLEDevice]'))
+            152 LOAD_CONST              49 (<code object discover at 0x0000027041990370, file "bleak\__init__.py", line 236>)
+            154 MAKE_FUNCTION            7 (defaults, kwdefaults, annotations)
+
+237         156 PRECALL                  0
+            160 CALL                     0
+
+236         170 PRECALL                  0
+            174 CALL                     0
+
+238         184 STORE_NAME              16 (discover)
+
+246         186 LOAD_NAME               14 (overload)
+
+247         188 LOAD_NAME               15 (classmethod)
+
+250         190 NOP
+
+248         192 LOAD_CONST              74 ((5.0,))
+            194 LOAD_CONST              76 (('timeout', 'float', 'return_adv', 'Literal[True]', 'kwargs', 'Unpack[ExtraArgs]', 'return', 'dict[str, tuple[BLEDevice, AdvertisementData]]'))
+            196 LOAD_CONST              52 (<code object discover at 0x00000270419936A0, file "bleak\__init__.py", line 246>)
+            198 MAKE_FUNCTION            5 (defaults, annotations)
+
+247         200 PRECALL                  0
+            204 CALL                     0
+
+246         214 PRECALL                  0
+            218 CALL                     0
+
+248         228 STORE_NAME              16 (discover)
+
+256         230 LOAD_NAME               15 (classmethod)
+
+259         232 NOP
+
+257         234 LOAD_CONST              74 ((5.0,))
+
+261         236 LOAD_CONST              39 (False)
+
+257         238 LOAD_CONST              42 (('return_adv',))
+            240 BUILD_CONST_KEY_MAP      1
+            242 LOAD_CONST              77 (('timeout', 'float', 'return_adv', 'bool', 'kwargs', 'Unpack[ExtraArgs]'))
+            244 LOAD_CONST              54 (<code object discover at 0x00000270419DF1B0, file "bleak\__init__.py", line 256>)
+            246 MAKE_FUNCTION            7 (defaults, kwdefaults, annotations)
+
+256         248 PRECALL                  0
+            252 CALL                     0
+
+257         262 STORE_NAME              16 (discover)
+
+291         264 LOAD_NAME                5 (property)
+
+292         266 LOAD_CONST              78 (('return', 'list[BLEDevice]'))
+            268 LOAD_CONST              55 (<code object discovered_devices at 0x0000027041E31F00, file "bleak\__init__.py", line 291>)
+            270 MAKE_FUNCTION            4 (annotations)
+
+291         272 PRECALL                  0
+            276 CALL                     0
+
+292         286 STORE_NAME              17 (discovered_devices)
+
+300         288 LOAD_NAME                5 (property)
+
+301         290 LOAD_CONST              79 (('return', 'dict[str, tuple[BLEDevice, AdvertisementData]]'))
+            292 LOAD_CONST              56 (<code object discovered_devices_and_advertisement_data at 0x0000027041E32120, file "bleak\__init__.py", line 300>)
+            294 MAKE_FUNCTION            4 (annotations)
+
+300         296 PRECALL                  0
+            300 CALL                     0
+
+301         310 STORE_NAME              18 (discovered_devices_and_advertisement_data)
+
+317         312 LOAD_NAME               15 (classmethod)
+
+319         314 NOP
+
+318         316 LOAD_CONST              80 ((10.0,))
+            318 LOAD_CONST              81 (('device_identifier', 'str', 'timeout', 'float', 'kwargs', 'Unpack[ExtraArgs]', 'return', 'Optional[BLEDevice]'))
+            320 LOAD_CONST              61 (<code object find_device_by_address at 0x0000027041DE5110, file "bleak\__init__.py", line 317>)
+            322 MAKE_FUNCTION            5 (defaults, annotations)
+
+317         324 PRECALL                  0
+            328 CALL                     0
+
+318         338 STORE_NAME              19 (find_device_by_address)
+
+339         340 LOAD_NAME               15 (classmethod)
+
+341         342 NOP
+
+340         344 LOAD_CONST              80 ((10.0,))
+            346 LOAD_CONST              82 (('name', 'str', 'timeout', 'float', 'kwargs', 'Unpack[ExtraArgs]', 'return', 'Optional[BLEDevice]'))
+            348 LOAD_CONST              63 (<code object find_device_by_name at 0x0000027041E25930, file "bleak\__init__.py", line 339>)
+            350 MAKE_FUNCTION            5 (defaults, annotations)
+
+339         352 PRECALL                  0
+            356 CALL                     0
+
+340         366 STORE_NAME              20 (find_device_by_name)
+
+361         368 LOAD_NAME               15 (classmethod)
+
+365         370 NOP
+
+362         372 LOAD_CONST              80 ((10.0,))
+            374 LOAD_CONST              83 (('filterfunc', 'AdvertisementDataFilter', 'timeout', 'float', 'kwargs', 'Unpack[ExtraArgs]', 'return', 'Optional[BLEDevice]'))
+            376 LOAD_CONST              66 (<code object find_device_by_filter at 0x0000027041CA4740, file "bleak\__init__.py", line 361>)
+            378 MAKE_FUNCTION            5 (defaults, annotations)
+
+361         380 PRECALL                  0
+            384 CALL                     0
+
+362         394 STORE_NAME              21 (find_device_by_filter)
+            396 LOAD_CONST               2 (None)
+            398 RETURN_VALUE
+
+    ### __init__ at line 106
+    # varnames: ('self', 'detection_callback', 'service_uuids', 'scanning_mode', 'bluez', 'cb', 'backend', 'kwargs', 'PlatformBleakScanner', 'backend_id')
+    # names: ('get_platform_scanner_backend_type', '__name__', '_backend', '_backend_id')
+106           0 RESUME                   0
+
+119           2 LOAD_FAST                6 (backend)
+              4 POP_JUMP_FORWARD_IF_NOT_NONE    14 (to 34)
+
+118           6 LOAD_GLOBAL              1 (NULL + get_platform_scanner_backend_type)
+             18 PRECALL                  0
+             22 CALL                     0
+             32 JUMP_FORWARD             8 (to 50)
+
+120     >>   34 LOAD_FAST                6 (backend)
+             36 LOAD_FAST                6 (backend)
+             38 LOAD_ATTR                1 (__name__)
+             48 BUILD_TUPLE              2
+
+117     >>   50 UNPACK_SEQUENCE          2
+             54 STORE_FAST               8 (PlatformBleakScanner)
+             56 STORE_FAST               9 (backend_id)
+
+123          58 PUSH_NULL
+             60 LOAD_FAST                8 (PlatformBleakScanner)
+
+124          62 LOAD_FAST                1 (detection_callback)
+
+125          64 LOAD_FAST                2 (service_uuids)
+
+126          66 LOAD_FAST                3 (scanning_mode)
+
+123          68 BUILD_TUPLE              3
+
+127          70 LOAD_FAST                4 (bluez)
+
+128          72 LOAD_FAST                5 (cb)
+
+123          74 LOAD_CONST               1 (('bluez', 'cb'))
+             76 BUILD_CONST_KEY_MAP      2
+
+129          78 LOAD_FAST                7 (kwargs)
+
+123          80 DICT_MERGE               1
+             82 CALL_FUNCTION_EX         1
+             84 LOAD_FAST                0 (self)
+             86 STORE_ATTR               2 (_backend)
+
+131          96 LOAD_FAST                9 (backend_id)
+             98 LOAD_FAST                0 (self)
+            100 STORE_ATTR               3 (_backend_id)
+            110 LOAD_CONST               0 (None)
+            112 RETURN_VALUE
+
+    ### backend_id at line 133
+    # varnames: ('self',)
+    # names: ('_backend_id',)
+    # const[0]: '\n        Gets the identifier of the backend in use.\n\n        The value is one of the :class:`BleakBackend` enum values in case of\n        built-in backends, or a string identifying a custom backend.\n\n        .. versionadded:: 2.0\n        '
+133           0 RESUME                   0
+
+143           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_backend_id)
+             14 RETURN_VALUE
+
+    ### __aenter__ at line 145
+    # varnames: ('self',)
+    # names: ('start',)
+145           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+146           6 LOAD_FAST                0 (self)
+              8 LOAD_METHOD              0 (start)
+             30 PRECALL                  0
+             34 CALL                     0
+             44 GET_AWAITABLE            0
+             46 LOAD_CONST               0 (None)
+        >>   48 SEND                     3 (to 56)
+             50 YIELD_VALUE
+             52 RESUME                   3
+             54 JUMP_BACKWARD_NO_INTERRUPT     4 (to 48)
+        >>   56 POP_TOP
+
+147          58 LOAD_FAST                0 (self)
+             60 RETURN_VALUE
+
+    ### __aexit__ at line 149
+    # varnames: ('self', 'exc_type', 'exc_val', 'exc_tb')
+    # names: ('stop',)
+149           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+155           6 LOAD_FAST                0 (self)
+              8 LOAD_METHOD              0 (stop)
+             30 PRECALL                  0
+             34 CALL                     0
+             44 GET_AWAITABLE            0
+             46 LOAD_CONST               0 (None)
+        >>   48 SEND                     3 (to 56)
+             50 YIELD_VALUE
+             52 RESUME                   3
+             54 JUMP_BACKWARD_NO_INTERRUPT     4 (to 48)
+        >>   56 POP_TOP
+             58 LOAD_CONST               0 (None)
+             60 RETURN_VALUE
+
+    ### start at line 157
+    # varnames: ('self',)
+    # names: ('_backend', 'start')
+    # const[0]: '\n        Start scanning for devices.\n\n        Raises:\n            BleakBluetoothNotAvailableError:\n                if Bluetooth is not currently available\n\n        .. versionchanged:: 2.0\n            Now raises :class:`BleakBluetoothNotAvailableError` instead of :class:`BleakError`\n            when Bluetooth is not currently available.\n        '
+157           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+169           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_backend)
+             18 LOAD_METHOD              1 (start)
+             40 PRECALL                  0
+             44 CALL                     0
+             54 GET_AWAITABLE            0
+             56 LOAD_CONST               1 (None)
+        >>   58 SEND                     3 (to 66)
+             60 YIELD_VALUE
+             62 RESUME                   3
+             64 JUMP_BACKWARD_NO_INTERRUPT     4 (to 58)
+        >>   66 POP_TOP
+             68 LOAD_CONST               1 (None)
+             70 RETURN_VALUE
+
+    ### stop at line 171
+    # varnames: ('self',)
+    # names: ('_backend', 'stop')
+    # const[0]: 'Stop scanning for devices'
+171           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+173           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_backend)
+             18 LOAD_METHOD              1 (stop)
+             40 PRECALL                  0
+             44 CALL                     0
+             54 GET_AWAITABLE            0
+             56 LOAD_CONST               1 (None)
+        >>   58 SEND                     3 (to 66)
+             60 YIELD_VALUE
+             62 RESUME                   3
+             64 JUMP_BACKWARD_NO_INTERRUPT     4 (to 58)
+        >>   66 POP_TOP
+             68 LOAD_CONST               1 (None)
+             70 RETURN_VALUE
+
+    ### advertisement_data at line 175
+    # varnames: ('self', 'unregister_callback')
+    # names: ('asyncio', 'Queue', '_backend', 'register_detection_callback', 'get')
+    # const[0]: '\n        Yields devices and associated advertising data packets as they are discovered.\n\n        .. note::\n            Ensure that scanning is started before calling this method.\n\n        Returns:\n            An async iterator that yields tuples (:class:`BLEDevice`, :class:`AdvertisementData`).\n\n        .. versionadded:: 0.21\n        '
+              0 MAKE_CELL                2 (devices)
+
+175           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+
+189           8 LOAD_GLOBAL              1 (NULL + asyncio)
+             20 LOAD_ATTR                1 (Queue)
+             30 PRECALL                  0
+             34 CALL                     0
+             44 STORE_DEREF              2 (devices)
+
+191          46 LOAD_FAST                0 (self)
+             48 LOAD_ATTR                2 (_backend)
+             58 LOAD_METHOD              3 (register_detection_callback)
+
+192          80 LOAD_CLOSURE             2 (devices)
+             82 BUILD_TUPLE              1
+             84 LOAD_CONST               1 (<code object <lambda> at 0x0000027041DDF000, file "bleak\__init__.py", line 192>)
+             86 MAKE_FUNCTION            8 (closure)
+
+191          88 PRECALL                  1
+             92 CALL                     1
+            102 STORE_FAST               1 (unregister_callback)
+
+194         104 NOP
+
+195         106 NOP
+
+196     >>  108 LOAD_DEREF               2 (devices)
+            110 LOAD_METHOD              4 (get)
+            132 PRECALL                  0
+            136 CALL                     0
+            146 GET_AWAITABLE            0
+            148 LOAD_CONST               3 (None)
+        >>  150 SEND                     3 (to 158)
+            152 YIELD_VALUE
+            154 RESUME                   3
+            156 JUMP_BACKWARD_NO_INTERRUPT     4 (to 150)
+        >>  158 ASYNC_GEN_WRAP
+            160 YIELD_VALUE
+            162 RESUME                   1
+            164 POP_TOP
+
+195         166 JUMP_BACKWARD           30 (to 108)
+        >>  168 PUSH_EXC_INFO
+
+198         170 PUSH_NULL
+            172 LOAD_FAST                1 (unregister_callback)
+            174 PRECALL                  0
+            178 CALL                     0
+            188 POP_TOP
+            190 RERAISE                  0
+        >>  192 COPY                     3
+            194 POP_EXCEPT
+            196 RERAISE                  1
+ExceptionTable:
+  106 to 166 -> 168 [0]
+  168 to 190 -> 192 [1] lasti
+
+      ### <lambda> at line 192
+      # varnames: ('bd', 'ad')
+      # names: ('put_nowait',)
+              0 COPY_FREE_VARS           1
+
+192           2 RESUME                   0
+              4 LOAD_DEREF               2 (devices)
+              6 LOAD_METHOD              0 (put_nowait)
+             28 LOAD_FAST                0 (bd)
+             30 LOAD_FAST                1 (ad)
+             32 BUILD_TUPLE              2
+             34 PRECALL                  1
+             38 CALL                     1
+             48 RETURN_VALUE
+
+    ### ExtraArgs at line 200
+    # varnames: ()
+    # names: ('__name__', '__module__', '__qualname__', '__doc__', '__annotations__')
+    # const[0]: 'BleakScanner.ExtraArgs'
+    # const[1]: '\n        Keyword args from :class:`~bleak.BleakScanner` that can be passed to\n        other convenience methods.\n        '
+    # const[2]: 'list[str]'
+    # const[3]: 'service_uuids'
+    # const[4]: "Literal['active', 'passive']"
+    # const[5]: 'scanning_mode'
+    # const[6]: 'BlueZScannerArgs'
+    # const[7]: 'bluez'
+    # const[8]: 'CBScannerArgs'
+    # const[9]: 'cb'
+    # const[10]: 'type[BaseBleakScanner]'
+    # const[11]: 'backend'
+    # const[12]: 'str | None'
+    # const[13]: 'adapter'
+200           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('BleakScanner.ExtraArgs')
+              8 STORE_NAME               2 (__qualname__)
+             10 SETUP_ANNOTATIONS
+
+201          12 LOAD_CONST               1 ('\n        Keyword args from :class:`~bleak.BleakScanner` that can be passed to\n        other convenience methods.\n        ')
+             14 STORE_NAME               3 (__doc__)
+
+206          16 LOAD_CONST               2 ('list[str]')
+             18 LOAD_NAME                4 (__annotations__)
+             20 LOAD_CONST               3 ('service_uuids')
+             22 STORE_SUBSCR
+
+207          26 NOP
+
+212          28 LOAD_CONST               4 ("Literal['active', 'passive']")
+             30 LOAD_NAME                4 (__annotations__)
+             32 LOAD_CONST               5 ('scanning_mode')
+             34 STORE_SUBSCR
+
+213          38 NOP
+
+218          40 LOAD_CONST               6 ('BlueZScannerArgs')
+             42 LOAD_NAME                4 (__annotations__)
+             44 LOAD_CONST               7 ('bluez')
+             46 STORE_SUBSCR
+
+219          50 NOP
+
+222          52 LOAD_CONST               8 ('CBScannerArgs')
+             54 LOAD_NAME                4 (__annotations__)
+             56 LOAD_CONST               9 ('cb')
+             58 STORE_SUBSCR
+
+223          62 NOP
+
+226          64 LOAD_CONST              10 ('type[BaseBleakScanner]')
+             66 LOAD_NAME                4 (__annotations__)
+             68 LOAD_CONST              11 ('backend')
+             70 STORE_SUBSCR
+
+227          74 NOP
+
+231          76 LOAD_CONST              12 ('str | None')
+             78 LOAD_NAME                4 (__annotations__)
+             80 LOAD_CONST              13 ('adapter')
+             82 STORE_SUBSCR
+
+232          86 LOAD_CONST              14 (None)
+             88 RETURN_VALUE
+
+    ### discover at line 236
+    # varnames: ('cls', 'timeout', 'return_adv', 'kwargs')
+    # names: ()
+236           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+244           6 LOAD_CONST               0 (None)
+              8 RETURN_VALUE
+
+    ### discover at line 246
+    # varnames: ('cls', 'timeout', 'return_adv', 'kwargs')
+    # names: ()
+246           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+254           6 LOAD_CONST               0 (None)
+              8 RETURN_VALUE
+
+    ### discover at line 256
+    # varnames: ('cls', 'timeout', 'return_adv', 'kwargs', 'scanner')
+    # names: ('asyncio', 'sleep', 'discovered_devices_and_advertisement_data', 'discovered_devices')
+    # const[0]: '\n        Scan continuously for ``timeout`` seconds and return discovered devices.\n\n        Args:\n            timeout:\n                Time, in seconds, to scan for.\n            return_adv:\n                If ``True``, the return value will include advertising data.\n            **kwargs:\n                Additional arguments will be passed to the :class:`BleakScanner`\n                constructor.\n\n        Returns:\n            The value of :attr:`discovered_devices_and_advertisement_data` if\n            ``return_adv`` is ``True``, otherwise the value of :attr:`discovered_devices`.\n\n        .. versionchanged:: 0.19\n            Added ``return_adv`` parameter.\n        '
+256           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+283           6 PUSH_NULL
+              8 LOAD_FAST                0 (cls)
+             10 LOAD_CONST               2 (())
+             12 BUILD_MAP                0
+             14 LOAD_FAST                3 (kwargs)
+             16 DICT_MERGE               1
+             18 CALL_FUNCTION_EX         1
+             20 BEFORE_ASYNC_WITH
+             22 GET_AWAITABLE            1
+             24 LOAD_CONST               1 (None)
+        >>   26 SEND                     3 (to 34)
+             28 YIELD_VALUE
+             30 RESUME                   3
+             32 JUMP_BACKWARD_NO_INTERRUPT     4 (to 26)
+        >>   34 STORE_FAST               4 (scanner)
+
+284          36 LOAD_GLOBAL              1 (NULL + asyncio)
+             48 LOAD_ATTR                1 (sleep)
+             58 LOAD_FAST                1 (timeout)
+             60 PRECALL                  1
+             64 CALL                     1
+             74 GET_AWAITABLE            0
+             76 LOAD_CONST               1 (None)
+        >>   78 SEND                     3 (to 86)
+             80 YIELD_VALUE
+             82 RESUME                   3
+             84 JUMP_BACKWARD_NO_INTERRUPT     4 (to 78)
+        >>   86 POP_TOP
+
+283          88 LOAD_CONST               1 (None)
+             90 LOAD_CONST               1 (None)
+             92 LOAD_CONST               1 (None)
+             94 PRECALL                  2
+             98 CALL                     2
+            108 GET_AWAITABLE            2
+            110 LOAD_CONST               1 (None)
+        >>  112 SEND                     3 (to 120)
+            114 YIELD_VALUE
+            116 RESUME                   3
+            118 JUMP_BACKWARD_NO_INTERRUPT     4 (to 112)
+        >>  120 POP_TOP
+            122 JUMP_FORWARD            17 (to 158)
+        >>  124 PUSH_EXC_INFO
+            126 WITH_EXCEPT_START
+            128 GET_AWAITABLE            2
+            130 LOAD_CONST               1 (None)
+        >>  132 SEND                     3 (to 140)
+            134 YIELD_VALUE
+            136 RESUME                   3
+            138 JUMP_BACKWARD_NO_INTERRUPT     4 (to 132)
+        >>  140 POP_JUMP_FORWARD_IF_TRUE     4 (to 150)
+            142 RERAISE                  2
+        >>  144 COPY                     3
+            146 POP_EXCEPT
+            148 RERAISE                  1
+        >>  150 POP_TOP
+            152 POP_EXCEPT
+            154 POP_TOP
+            156 POP_TOP
+
+286     >>  158 LOAD_FAST                2 (return_adv)
+            160 POP_JUMP_FORWARD_IF_FALSE     7 (to 176)
+
+287         162 LOAD_FAST                4 (scanner)
+            164 LOAD_ATTR                2 (discovered_devices_and_advertisement_data)
+            174 RETURN_VALUE
+
+289     >>  176 LOAD_FAST                4 (scanner)
+            178 LOAD_ATTR                3 (discovered_devices)
+            188 RETURN_VALUE
+ExceptionTable:
+  34 to 86 -> 124 [1] lasti
+  124 to 142 -> 144 [3] lasti
+  150 to 150 -> 144 [3] lasti
+
+    ### discovered_devices at line 291
+    # varnames: ('self',)
+    # names: ('_backend', 'seen_devices', 'values')
+    # const[0]: '\n        Gets list of the devices that the scanner has discovered during the scanning.\n\n        If you also need advertisement data, use :attr:`discovered_devices_and_advertisement_data` instead.\n        '
+291           0 RESUME                   0
+
+298           2 LOAD_CONST               1 (<code object <listcomp> at 0x00000270419939E0, file "bleak\__init__.py", line 298>)
+              4 MAKE_FUNCTION            0
+              6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_backend)
+             18 LOAD_ATTR                1 (seen_devices)
+             28 LOAD_METHOD              2 (values)
+             50 PRECALL                  0
+             54 CALL                     0
+             64 GET_ITER
+             66 PRECALL                  0
+             70 CALL                     0
+             80 RETURN_VALUE
+
+      ### <listcomp> at line 298
+      # varnames: ('.0', 'd', '_')
+      # names: ()
+298           0 RESUME                   0
+              2 BUILD_LIST               0
+              4 LOAD_FAST                0 (.0)
+        >>    6 FOR_ITER                 7 (to 22)
+              8 UNPACK_SEQUENCE          2
+             12 STORE_FAST               1 (d)
+             14 STORE_FAST               2 (_)
+             16 LOAD_FAST                1 (d)
+             18 LIST_APPEND              2
+             20 JUMP_BACKWARD            8 (to 6)
+        >>   22 RETURN_VALUE
+
+    ### discovered_devices_and_advertisement_data at line 300
+    # varnames: ('self',)
+    # names: ('_backend', 'seen_devices', 'values')
+    # const[0]: "\n        Gets a map of device address to tuples of devices and the most recently\n        received advertisement data for that device.\n\n        The address keys are useful to compare the discovered devices to a set\n        of known devices. If you don't need to do that, consider using\n        ``discovered_devices_and_advertisement_data.values()`` to just get the\n        values instead.\n\n        .. versionadded:: 0.19\n        "
+300           0 RESUME                   0
+
+315           2 LOAD_CONST               1 (<code object <dictcomp> at 0x0000027041DDF4B0, file "bleak\__init__.py", line 315>)
+              4 MAKE_FUNCTION            0
+              6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_backend)
+             18 LOAD_ATTR                1 (seen_devices)
+             28 LOAD_METHOD              2 (values)
+             50 PRECALL                  0
+             54 CALL                     0
+             64 GET_ITER
+             66 PRECALL                  0
+             70 CALL                     0
+             80 RETURN_VALUE
+
+      ### <dictcomp> at line 315
+      # varnames: ('.0', 'd')
+      # names: ('address',)
+315           0 RESUME                   0
+              2 BUILD_MAP                0
+              4 LOAD_FAST                0 (.0)
+        >>    6 FOR_ITER                16 (to 40)
+              8 STORE_FAST               1 (d)
+             10 LOAD_FAST                1 (d)
+             12 LOAD_CONST               0 (0)
+             14 BINARY_SUBSCR
+             24 LOAD_ATTR                0 (address)
+             34 LOAD_FAST                1 (d)
+             36 MAP_ADD                  2
+             38 JUMP_BACKWARD           17 (to 6)
+        >>   40 RETURN_VALUE
+
+    ### find_device_by_address at line 317
+    # varnames: ('cls', 'device_identifier', 'timeout', 'kwargs')
+    # names: ('lower', 'find_device_by_filter')
+    # const[0]: 'Obtain a ``BLEDevice`` for a BLE server specified by Bluetooth address or (macOS) UUID address.\n\n        Args:\n            device_identifier: The Bluetooth/UUID address of the Bluetooth peripheral sought.\n            timeout: Optional timeout to wait for detection of specified peripheral before giving up. Defaults to 10.0 seconds.\n            **kwargs: additional args passed to the :class:`BleakScanner` constructor.\n\n        Returns:\n            The ``BLEDevice`` sought or ``None`` if not detected.\n\n        '
+    # const[2]: 'timeout'
+              0 MAKE_CELL                1 (device_identifier)
+
+317           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+
+332           8 LOAD_DEREF               1 (device_identifier)
+             10 LOAD_METHOD              0 (lower)
+             32 PRECALL                  0
+             36 CALL                     0
+             46 STORE_DEREF              1 (device_identifier)
+
+333          48 PUSH_NULL
+             50 LOAD_FAST                0 (cls)
+             52 LOAD_ATTR                1 (find_device_by_filter)
+
+334          62 LOAD_CLOSURE             1 (device_identifier)
+             64 BUILD_TUPLE              1
+             66 LOAD_CONST               1 (<code object <lambda> at 0x0000027041E25030, file "bleak\__init__.py", line 334>)
+             68 MAKE_FUNCTION            8 (closure)
+
+333          70 BUILD_TUPLE              1
+             72 LOAD_CONST               2 ('timeout')
+
+335          74 LOAD_FAST                2 (timeout)
+
+333          76 BUILD_MAP                1
+
+336          78 LOAD_FAST                3 (kwargs)
+
+333          80 DICT_MERGE               1
+             82 CALL_FUNCTION_EX         1
+             84 GET_AWAITABLE            0
+             86 LOAD_CONST               3 (None)
+        >>   88 SEND                     3 (to 96)
+             90 YIELD_VALUE
+             92 RESUME                   3
+             94 JUMP_BACKWARD_NO_INTERRUPT     4 (to 88)
+        >>   96 RETURN_VALUE
+
+      ### <lambda> at line 334
+      # varnames: ('d', 'ad')
+      # names: ('address', 'lower')
+              0 COPY_FREE_VARS           1
+
+334           2 RESUME                   0
+              4 LOAD_FAST                0 (d)
+              6 LOAD_ATTR                0 (address)
+             16 LOAD_METHOD              1 (lower)
+             38 PRECALL                  0
+             42 CALL                     0
+             52 LOAD_DEREF               2 (device_identifier)
+             54 COMPARE_OP               2 (==)
+             60 RETURN_VALUE
+
+    ### find_device_by_name at line 339
+    # varnames: ('cls', 'name', 'timeout', 'kwargs')
+    # names: ('find_device_by_filter',)
+    # const[0]: 'Obtain a ``BLEDevice`` for a BLE server specified by the local name in the advertising data.\n\n        Args:\n            name: The name sought.\n            timeout: Optional timeout to wait for detection of specified peripheral before giving up. Defaults to 10.0 seconds.\n            **kwargs: additional args passed to the :class:`BleakScanner` constructor.\n\n        Returns:\n            The ``BLEDevice`` sought or ``None`` if not detected.\n\n        .. versionadded:: 0.20\n        '
+    # const[2]: 'timeout'
+              0 MAKE_CELL                1 (name)
+
+339           2 RETURN_GENERATOR
+              4 POP_TOP
+              6 RESUME                   0
+
+355           8 PUSH_NULL
+             10 LOAD_FAST                0 (cls)
+             12 LOAD_ATTR                0 (find_device_by_filter)
+
+356          22 LOAD_CLOSURE             1 (name)
+             24 BUILD_TUPLE              1
+             26 LOAD_CONST               1 (<code object <lambda> at 0x00000270419E6DB0, file "bleak\__init__.py", line 356>)
+             28 MAKE_FUNCTION            8 (closure)
+
+355          30 BUILD_TUPLE              1
+             32 LOAD_CONST               2 ('timeout')
+
+357          34 LOAD_FAST                2 (timeout)
+
+355          36 BUILD_MAP                1
+
+358          38 LOAD_FAST                3 (kwargs)
+
+355          40 DICT_MERGE               1
+             42 CALL_FUNCTION_EX         1
+             44 GET_AWAITABLE            0
+             46 LOAD_CONST               3 (None)
+        >>   48 SEND                     3 (to 56)
+             50 YIELD_VALUE
+             52 RESUME                   3
+             54 JUMP_BACKWARD_NO_INTERRUPT     4 (to 48)
+        >>   56 RETURN_VALUE
+
+      ### <lambda> at line 356
+      # varnames: ('d', 'ad')
+      # names: ('local_name',)
+              0 COPY_FREE_VARS           1
+
+356           2 RESUME                   0
+              4 LOAD_FAST                1 (ad)
+              6 LOAD_ATTR                0 (local_name)
+             16 LOAD_DEREF               2 (name)
+             18 COMPARE_OP               2 (==)
+             24 RETURN_VALUE
+
+    ### find_device_by_filter at line 361
+    # varnames: ('cls', 'filterfunc', 'timeout', 'kwargs', 'scanner', 'bd', 'ad')
+    # names: ('async_timeout', 'advertisement_data', 'assert_never', 'cast', 'Never', 'asyncio', 'TimeoutError')
+    # const[0]: 'Obtain a ``BLEDevice`` for a BLE server that matches a given filter function.\n\n        This can be used to find a BLE server by other identifying information than its address,\n        for example its name.\n\n        Args:\n            filterfunc:\n                A function that is called for every BLEDevice found. It should\n                return ``True`` only for the wanted device.\n            timeout:\n                Optional timeout to wait for detection of specified peripheral\n                before giving up. Defaults to 10.0 seconds.\n            **kwargs:\n                Additional arguments to be passed to the :class:`BleakScanner`\n                constructor.\n\n        Returns:\n            The :class:`BLEDevice` sought or ``None`` if not detected before\n            the timeout.\n\n        '
+    # const[2]: 'advertisement_data() should never stop'
+361           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+389           6 PUSH_NULL
+              8 LOAD_FAST                0 (cls)
+             10 LOAD_CONST               3 (())
+             12 BUILD_MAP                0
+             14 LOAD_FAST                3 (kwargs)
+             16 DICT_MERGE               1
+             18 CALL_FUNCTION_EX         1
+             20 BEFORE_ASYNC_WITH
+             22 GET_AWAITABLE            1
+             24 LOAD_CONST               1 (None)
+        >>   26 SEND                     3 (to 34)
+             28 YIELD_VALUE
+             30 RESUME                   3
+             32 JUMP_BACKWARD_NO_INTERRUPT     4 (to 26)
+        >>   34 STORE_FAST               4 (scanner)
+
+390          36 NOP
+
+391          38 LOAD_GLOBAL              1 (NULL + async_timeout)
+             50 LOAD_FAST                2 (timeout)
+             52 PRECALL                  1
+             56 CALL                     1
+             66 BEFORE_ASYNC_WITH
+             68 GET_AWAITABLE            1
+             70 LOAD_CONST               1 (None)
+        >>   72 SEND                     3 (to 80)
+             74 YIELD_VALUE
+             76 RESUME                   3
+             78 JUMP_BACKWARD_NO_INTERRUPT     4 (to 72)
+        >>   80 POP_TOP
+
+392          82 LOAD_FAST                4 (scanner)
+             84 LOAD_METHOD              1 (advertisement_data)
+            106 PRECALL                  0
+            110 CALL                     0
+            120 GET_AITER
+        >>  122 GET_ANEXT
+            124 LOAD_CONST               1 (None)
+        >>  126 SEND                     3 (to 134)
+            128 YIELD_VALUE
+            130 RESUME                   3
+            132 JUMP_BACKWARD_NO_INTERRUPT     4 (to 126)
+        >>  134 UNPACK_SEQUENCE          2
+            138 STORE_FAST               5 (bd)
+            140 STORE_FAST               6 (ad)
+
+393         142 PUSH_NULL
+            144 LOAD_FAST                1 (filterfunc)
+            146 LOAD_FAST                5 (bd)
+            148 LOAD_FAST                6 (ad)
+            150 PRECALL                  2
+            154 CALL                     2
+            164 POP_JUMP_FORWARD_IF_FALSE    40 (to 246)
+
+394         166 LOAD_FAST                5 (bd)
+            168 SWAP                     2
+            170 POP_TOP
+
+391         172 SWAP                     2
+            174 LOAD_CONST               1 (None)
+            176 LOAD_CONST               1 (None)
+            178 LOAD_CONST               1 (None)
+            180 PRECALL                  2
+            184 CALL                     2
+            194 GET_AWAITABLE            2
+            196 LOAD_CONST               1 (None)
+        >>  198 SEND                     3 (to 206)
+            200 YIELD_VALUE
+            202 RESUME                   3
+            204 JUMP_BACKWARD_NO_INTERRUPT     4 (to 198)
+        >>  206 POP_TOP
+
+389         208 SWAP                     2
+            210 LOAD_CONST               1 (None)
+            212 LOAD_CONST               1 (None)
+            214 LOAD_CONST               1 (None)
+            216 PRECALL                  2
+            220 CALL                     2
+            230 GET_AWAITABLE            2
+            232 LOAD_CONST               1 (None)
+        >>  234 SEND                     3 (to 242)
+            236 YIELD_VALUE
+            238 RESUME                   3
+            240 JUMP_BACKWARD_NO_INTERRUPT     4 (to 234)
+        >>  242 POP_TOP
+            244 RETURN_VALUE
+
+393     >>  246 JUMP_BACKWARD           63 (to 122)
+
+392     >>  248 END_ASYNC_FOR
+
+395         250 LOAD_GLOBAL              5 (NULL + assert_never)
+            262 LOAD_GLOBAL              7 (NULL + cast)
+            274 LOAD_GLOBAL              8 (Never)
+            286 LOAD_CONST               2 ('advertisement_data() should never stop')
+            288 PRECALL                  2
+            292 CALL                     2
+            302 PRECALL                  1
+            306 CALL                     1
+            316 POP_TOP
+
+391         318 LOAD_CONST               1 (None)
+            320 LOAD_CONST               1 (None)
+            322 LOAD_CONST               1 (None)
+            324 PRECALL                  2
+            328 CALL                     2
+            338 GET_AWAITABLE            2
+            340 LOAD_CONST               1 (None)
+        >>  342 SEND                     3 (to 350)
+            344 YIELD_VALUE
+            346 RESUME                   3
+            348 JUMP_BACKWARD_NO_INTERRUPT     4 (to 342)
+        >>  350 POP_TOP
+            352 JUMP_FORWARD            17 (to 388)
+        >>  354 PUSH_EXC_INFO
+            356 WITH_EXCEPT_START
+            358 GET_AWAITABLE            2
+            360 LOAD_CONST               1 (None)
+        >>  362 SEND                     3 (to 370)
+            364 YIELD_VALUE
+            366 RESUME                   3
+            368 JUMP_BACKWARD_NO_INTERRUPT     4 (to 362)
+        >>  370 POP_JUMP_FORWARD_IF_TRUE     4 (to 380)
+            372 RERAISE                  2
+        >>  374 COPY                     3
+            376 POP_EXCEPT
+            378 RERAISE                  1
+        >>  380 POP_TOP
+            382 POP_EXCEPT
+            384 POP_TOP
+            386 POP_TOP
+        >>  388 JUMP_FORWARD            39 (to 468)
+        >>  390 PUSH_EXC_INFO
+
+396         392 LOAD_GLOBAL             10 (asyncio)
+            404 LOAD_ATTR                6 (TimeoutError)
+            414 CHECK_EXC_MATCH
+            416 POP_JUMP_FORWARD_IF_FALSE    21 (to 460)
+            418 POP_TOP
+
+397         420 POP_EXCEPT
+
+389         422 LOAD_CONST               1 (None)
+            424 LOAD_CONST               1 (None)
+            426 LOAD_CONST               1 (None)
+            428 PRECALL                  2
+            432 CALL                     2
+            442 GET_AWAITABLE            2
+            444 LOAD_CONST               1 (None)
+        >>  446 SEND                     3 (to 454)
+            448 YIELD_VALUE
+            450 RESUME                   3
+            452 JUMP_BACKWARD_NO_INTERRUPT     4 (to 446)
+        >>  454 POP_TOP
+            456 LOAD_CONST               1 (None)
+            458 RETURN_VALUE
+
+396     >>  460 RERAISE                  0
+        >>  462 COPY                     3
+            464 POP_EXCEPT
+            466 RERAISE                  1
+
+389     >>  468 LOAD_CONST               1 (None)
+            470 LOAD_CONST               1 (None)
+            472 LOAD_CONST               1 (None)
+            474 PRECALL                  2
+            478 CALL                     2
+            488 GET_AWAITABLE            2
+            490 LOAD_CONST               1 (None)
+        >>  492 SEND                     3 (to 500)
+            494 YIELD_VALUE
+            496 RESUME                   3
+            498 JUMP_BACKWARD_NO_INTERRUPT     4 (to 492)
+        >>  500 POP_TOP
+            502 LOAD_CONST               1 (None)
+            504 RETURN_VALUE
+        >>  506 PUSH_EXC_INFO
+            508 WITH_EXCEPT_START
+            510 GET_AWAITABLE            2
+            512 LOAD_CONST               1 (None)
+        >>  514 SEND                     3 (to 522)
+            516 YIELD_VALUE
+            518 RESUME                   3
+            520 JUMP_BACKWARD_NO_INTERRUPT     4 (to 514)
+        >>  522 POP_JUMP_FORWARD_IF_TRUE     4 (to 532)
+            524 RERAISE                  2
+        >>  526 COPY                     3
+            528 POP_EXCEPT
+            530 RERAISE                  1
+        >>  532 POP_TOP
+            534 POP_EXCEPT
+            536 POP_TOP
+            538 POP_TOP
+            540 LOAD_CONST               1 (None)
+            542 RETURN_VALUE
+ExceptionTable:
+  34 to 34 -> 506 [1] lasti
+  38 to 78 -> 390 [1]
+  80 to 120 -> 354 [2] lasti
+  122 to 132 -> 248 [3]
+  134 to 170 -> 354 [2] lasti
+  172 to 206 -> 390 [1]
+  246 to 316 -> 354 [2] lasti
+  318 to 352 -> 390 [1]
+  354 to 372 -> 374 [4] lasti
+  374 to 378 -> 390 [1]
+  380 to 380 -> 374 [4] lasti
+  382 to 386 -> 390 [1]
+  388 to 388 -> 506 [1] lasti
+  390 to 418 -> 462 [2] lasti
+  420 to 420 -> 506 [1] lasti
+  460 to 460 -> 462 [2] lasti
+  462 to 466 -> 506 [1] lasti
+  506 to 524 -> 526 [3] lasti
+  532 to 532 -> 526 [3] lasti
+
+  ### _resolve_characteristic at line 400
+  # varnames: ('char_specifier', 'services', 'characteristic')
+  # names: ('isinstance', 'BleakGATTCharacteristic', 'get_characteristic', 'BleakCharacteristicNotFoundError')
+400           0 RESUME                   0
+
+405           2 LOAD_GLOBAL              1 (NULL + isinstance)
+             14 LOAD_FAST                0 (char_specifier)
+             16 LOAD_GLOBAL              2 (BleakGATTCharacteristic)
+             28 PRECALL                  2
+             32 CALL                     2
+             42 POP_JUMP_FORWARD_IF_FALSE     2 (to 48)
+
+406          44 LOAD_FAST                0 (char_specifier)
+             46 RETURN_VALUE
+
+408     >>   48 LOAD_FAST                1 (services)
+             50 LOAD_METHOD              2 (get_characteristic)
+             72 LOAD_FAST                0 (char_specifier)
+             74 PRECALL                  1
+             78 CALL                     1
+             88 STORE_FAST               2 (characteristic)
+
+410          90 LOAD_FAST                2 (characteristic)
+             92 POP_JUMP_FORWARD_IF_TRUE    15 (to 124)
+
+411          94 LOAD_GLOBAL              7 (NULL + BleakCharacteristicNotFoundError)
+            106 LOAD_FAST                0 (char_specifier)
+            108 PRECALL                  1
+            112 CALL                     1
+            122 RAISE_VARARGS            1
+
+413     >>  124 LOAD_FAST                2 (characteristic)
+            126 RETURN_VALUE
+
+  ### _resolve_descriptor at line 416
+  # varnames: ('desc_specifier', 'services', 'characteristic')
+  # names: ('isinstance', 'BleakGATTDescriptor', 'get_descriptor', 'BleakError')
+  # const[1]: 'Descriptor with handle '
+  # const[2]: ' was not found!'
+416           0 RESUME                   0
+
+421           2 LOAD_GLOBAL              1 (NULL + isinstance)
+             14 LOAD_FAST                0 (desc_specifier)
+             16 LOAD_GLOBAL              2 (BleakGATTDescriptor)
+             28 PRECALL                  2
+             32 CALL                     2
+             42 POP_JUMP_FORWARD_IF_FALSE     2 (to 48)
+
+422          44 LOAD_FAST                0 (desc_specifier)
+             46 RETURN_VALUE
+
+424     >>   48 LOAD_FAST                1 (services)
+             50 LOAD_METHOD              2 (get_descriptor)
+             72 LOAD_FAST                0 (desc_specifier)
+             74 PRECALL                  1
+             78 CALL                     1
+             88 STORE_FAST               2 (characteristic)
+
+426          90 LOAD_FAST                2 (characteristic)
+             92 POP_JUMP_FORWARD_IF_TRUE    19 (to 132)
+
+427          94 LOAD_GLOBAL              7 (NULL + BleakError)
+            106 LOAD_CONST               1 ('Descriptor with handle ')
+            108 LOAD_FAST                0 (desc_specifier)
+            110 FORMAT_VALUE             0
+            112 LOAD_CONST               2 (' was not found!')
+            114 BUILD_STRING             3
+            116 PRECALL                  1
+            120 CALL                     1
+            130 RAISE_VARARGS            1
+
+429     >>  132 LOAD_FAST                2 (characteristic)
+            134 RETURN_VALUE
+
+  ### BleakClient at line 432
+  # varnames: ()
+  # names: ('__name__', '__module__', '__qualname__', '__doc__', '__init__', 'property', 'backend_id', 'name', 'address', 'mtu_size', '__str__', '__repr__', '__aenter__', '__aexit__', 'connect', 'disconnect', 'pair', 'unpair', 'is_connected', 'services', 'read_gatt_char', 'write_gatt_char', 'start_notify', 'stop_notify', 'read_gatt_descriptor', 'write_gatt_descriptor')
+  # const[0]: 'BleakClient'
+  # const[1]: 'The Client interface for connecting to a specific BLE GATT server and communicating with it.\n\n    A BleakClient can be used as an asynchronous context manager in which case it automatically\n    connects and disconnects.\n\n    How many BLE connections can be active simultaneously, and whether connections can be active while\n    scanning depends on the Bluetooth adapter hardware.\n\n    Args:\n        address_or_ble_device:\n            A :class:`BLEDevice` received from a :class:`BleakScanner` or a\n            Bluetooth address (device UUID on macOS).\n        disconnected_callback:\n            Callback that will be scheduled in the event loop when the client is\n            disconnected. The callable must take one argument, which will be\n            this client object.\n        services:\n            Optional list of services to filter. If provided, only these services\n            will be resolved. This may or may not reduce the time needed to\n            enumerate the services depending on if the OS supports such filtering\n            in the Bluetooth stack or not (should affect Windows and Mac).\n            These can be 16-bit or 128-bit UUIDs.\n        timeout:\n            Timeout in seconds passed to the implicit ``discover`` call when\n            ``address_or_ble_device`` is not a :class:`BLEDevice`. Defaults to 30.\n        pair:\n            Attempt to pair with the the device before connecting, if it is not\n            already paired. This has no effect on macOS since pairing is initiated\n            automatically when accessing a characteristic that requires authentication.\n            In rare cases, on other platforms, it might be necessary to pair the\n            device first in order to be able to even enumerate the services during\n            the connection process.\n        winrt:\n            Dictionary of WinRT/Windows platform-specific options.\n        backend:\n            Used to override the automatically selected backend (i.e. for a\n            custom backend).\n        **kwargs:\n            Additional keyword arguments for backwards compatibility.\n\n    .. tip:: If you enable pairing with the ``pair`` argument, you will also\n        want to extend the timeout to allow enough time for the user to find\n        and enter the PIN code on the device, if required.\n\n    .. warning:: Although example code frequently initializes :class:`BleakClient`\n        with a Bluetooth address for simplicity, it is not recommended to do so\n        for more complex use cases. There are several known issues with providing\n        a Bluetooth address as the ``address_or_ble_device`` argument.\n\n        1.  macOS does not provide access to the Bluetooth address for privacy/\n            security reasons. Instead it creates a UUID for each Bluetooth\n            device which is used in place of the address on this platform.\n        2.  Providing an address or UUID instead of a :class:`BLEDevice` causes\n            the :meth:`connect` method to implicitly call :meth:`BleakScanner.discover`.\n            This is known to cause problems when trying to connect to multiple\n            devices at the same time.\n\n    .. versionchanged:: 0.15\n        ``disconnected_callback`` is no longer keyword-only. Added ``winrt`` parameter.\n\n    .. versionchanged:: 0.18\n        No longer is alias for backend type and no longer inherits from :class:`BaseBleakClient`.\n        Added ``backend`` parameter.\n\n    .. versionchanged:: 1.0\n        Added ``pair`` parameter.\n\n    .. versionchanged:: 2.1.1\n        Changed default connect timeout from 10 to 30 seconds.\n    '
+  # const[6]: 'address_or_ble_device'
+  # const[7]: 'Union[BLEDevice, str]'
+  # const[8]: 'disconnected_callback'
+  # const[9]: 'Optional[Callable[[BleakClient], None]]'
+  # const[10]: 'services'
+  # const[11]: 'Optional[Iterable[str]]'
+  # const[12]: 'timeout'
+  # const[13]: 'float'
+  # const[14]: 'pair'
+  # const[15]: 'bool'
+  # const[16]: 'winrt'
+  # const[17]: 'WinRTClientArgs'
+  # const[18]: 'backend'
+  # const[19]: 'Optional[type[BaseBleakClient]]'
+  # const[20]: 'kwargs'
+  # const[21]: 'Any'
+  # const[22]: 'return'
+  # const[23]: 'None'
+  # const[25]: 'BleakBackend | str'
+  # const[27]: 'str'
+  # const[30]: 'int'
+  # const[34]: 'Self'
+  # const[36]: 'exc_type'
+  # const[37]: 'Optional[type[BaseException]]'
+  # const[38]: 'exc_val'
+  # const[39]: 'Optional[BaseException]'
+  # const[40]: 'exc_tb'
+  # const[41]: 'Optional[TracebackType]'
+  # const[45]: 'args'
+  # const[49]: 'BleakGATTServiceCollection'
+  # const[51]: 'char_specifier'
+  # const[52]: 'Union[BleakGATTCharacteristic, int, str, uuid.UUID]'
+  # const[53]: 'bytearray'
+  # const[55]: 'data'
+  # const[56]: 'SizedBuffer'
+  # const[57]: 'response'
+  # const[58]: 'Optional[bool]'
+  # const[61]: 'callback'
+  # const[62]: 'Callable[[BleakGATTCharacteristic, bytearray], Union[None, Awaitable[None]]]'
+  # const[63]: 'bluez'
+  # const[64]: 'BlueZNotifyArgs'
+  # const[65]: 'cb'
+  # const[66]: 'CBStartNotifyArgs'
+  # const[69]: 'desc_specifier'
+  # const[70]: 'Union[BleakGATTDescriptor, int]'
+432           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('BleakClient')
+              8 STORE_NAME               2 (__qualname__)
+
+433          10 LOAD_CONST               1 ('The Client interface for connecting to a specific BLE GATT server and communicating with it.\n\n    A BleakClient can be used as an asynchronous context manager in which case it automatically\n    connects and disconnects.\n\n    How many BLE connections can be active simultaneously, and whether connections can be active while\n    scanning depends on the Bluetooth adapter hardware.\n\n    Args:\n        address_or_ble_device:\n            A :class:`BLEDevice` received from a :class:`BleakScanner` or a\n            Bluetooth address (device UUID on macOS).\n        disconnected_callback:\n            Callback that will be scheduled in the event loop when the client is\n            disconnected. The callable must take one argument, which will be\n            this client object.\n        services:\n            Optional list of services to filter. If provided, only these services\n            will be resolved. This may or may not reduce the time needed to\n            enumerate the services depending on if the OS supports such filtering\n            in the Bluetooth stack or not (should affect Windows and Mac).\n            These can be 16-bit or 128-bit UUIDs.\n        timeout:\n            Timeout in seconds passed to the implicit ``discover`` call when\n            ``address_or_ble_device`` is not a :class:`BLEDevice`. Defaults to 30.\n        pair:\n            Attempt to pair with the the device before connecting, if it is not\n            already paired. This has no effect on macOS since pairing is initiated\n            automatically when accessing a characteristic that requires authentication.\n            In rare cases, on other platforms, it might be necessary to pair the\n            device first in order to be able to even enumerate the services during\n            the connection process.\n        winrt:\n            Dictionary of WinRT/Windows platform-specific options.\n        backend:\n            Used to override the automatically selected backend (i.e. for a\n            custom backend).\n        **kwargs:\n            Additional keyword arguments for backwards compatibility.\n\n    .. tip:: If you enable pairing with the ``pair`` argument, you will also\n        want to extend the timeout to allow enough time for the user to find\n        and enter the PIN code on the device, if required.\n\n    .. warning:: Although example code frequently initializes :class:`BleakClient`\n        with a Bluetooth address for simplicity, it is not recommended to do so\n        for more complex use cases. There are several known issues with providing\n        a Bluetooth address as the ``address_or_ble_device`` argument.\n\n        1.  macOS does not provide access to the Bluetooth address for privacy/\n            security reasons. Instead it creates a UUID for each Bluetooth\n            device which is used in place of the address on this platform.\n        2.  Providing an address or UUID instead of a :class:`BLEDevice` causes\n            the :meth:`connect` method to implicitly call :meth:`BleakScanner.discover`.\n            This is known to cause problems when trying to connect to multiple\n            devices at the same time.\n\n    .. versionchanged:: 0.15\n        ``disconnected_callback`` is no longer keyword-only. Added ``winrt`` parameter.\n\n    .. versionchanged:: 0.18\n        No longer is alias for backend type and no longer inherits from :class:`BaseBleakClient`.\n        Added ``backend`` parameter.\n\n    .. versionchanged:: 1.0\n        Added ``pair`` parameter.\n\n    .. versionchanged:: 2.1.1\n        Changed default connect timeout from 10 to 30 seconds.\n    ')
+             12 STORE_NAME               3 (__doc__)
+
+507          14 NOP
+
+508          16 NOP
+
+504          18 LOAD_CONST              73 ((None, None))
+
+510          20 LOAD_CONST               3 (30)
+
+511          22 LOAD_CONST               4 (False)
+
+512          24 BUILD_MAP                0
+
+513          26 LOAD_CONST               2 (None)
+
+504          28 LOAD_CONST               5 (('timeout', 'pair', 'winrt', 'backend'))
+             30 BUILD_CONST_KEY_MAP      4
+             32 LOAD_CONST              74 (('address_or_ble_device', 'Union[BLEDevice, str]', 'disconnected_callback', 'Optional[Callable[[BleakClient], None]]', 'services', 'Optional[Iterable[str]]', 'timeout', 'float', 'pair', 'bool', 'winrt', 'WinRTClientArgs', 'backend', 'Optional[type[BaseBleakClient]]', 'kwargs', 'Any', 'return', 'None'))
+             34 LOAD_CONST              24 (<code object __init__ at 0x0000027041880A50, file "bleak\__init__.py", line 504>)
+             36 MAKE_FUNCTION            7 (defaults, kwdefaults, annotations)
+             38 STORE_NAME               4 (__init__)
+
+539          40 LOAD_NAME                5 (property)
+
+540          42 LOAD_CONST              75 (('return', 'BleakBackend | str'))
+             44 LOAD_CONST              26 (<code object backend_id at 0x0000027041993D20, file "bleak\__init__.py", line 539>)
+             46 MAKE_FUNCTION            4 (annotations)
+
+539          48 PRECALL                  0
+             52 CALL                     0
+
+540          62 STORE_NAME               6 (backend_id)
+
+553          64 LOAD_NAME                5 (property)
+
+554          66 LOAD_CONST              76 (('return', 'str'))
+             68 LOAD_CONST              28 (<code object name at 0x00000270419E7830, file "bleak\__init__.py", line 553>)
+             70 MAKE_FUNCTION            4 (annotations)
+
+553          72 PRECALL                  0
+             76 CALL                     0
+
+554          86 STORE_NAME               7 (name)
+
+569          88 LOAD_NAME                5 (property)
+
+570          90 LOAD_CONST              76 (('return', 'str'))
+             92 LOAD_CONST              29 (<code object address at 0x00000270419E7670, file "bleak\__init__.py", line 569>)
+             94 MAKE_FUNCTION            4 (annotations)
+
+569          96 PRECALL                  0
+            100 CALL                     0
+
+570         110 STORE_NAME               8 (address)
+
+576         112 LOAD_NAME                5 (property)
+
+577         114 LOAD_CONST              77 (('return', 'int'))
+            116 LOAD_CONST              31 (<code object mtu_size at 0x00000270419E7590, file "bleak\__init__.py", line 576>)
+            118 MAKE_FUNCTION            4 (annotations)
+
+576         120 PRECALL                  0
+            124 CALL                     0
+
+577         134 STORE_NAME               9 (mtu_size)
+
+589         136 LOAD_CONST              76 (('return', 'str'))
+            138 LOAD_CONST              32 (<code object __str__ at 0x0000027041DDF690, file "bleak\__init__.py", line 589>)
+            140 MAKE_FUNCTION            4 (annotations)
+            142 STORE_NAME              10 (__str__)
+
+592         144 LOAD_CONST              76 (('return', 'str'))
+            146 LOAD_CONST              33 (<code object __repr__ at 0x0000027041DE5230, file "bleak\__init__.py", line 592>)
+            148 MAKE_FUNCTION            4 (annotations)
+            150 STORE_NAME              11 (__repr__)
+
+597         152 LOAD_CONST              78 (('return', 'Self'))
+            154 LOAD_CONST              35 (<code object __aenter__ at 0x0000027041E25A30, file "bleak\__init__.py", line 597>)
+            156 MAKE_FUNCTION            4 (annotations)
+            158 STORE_NAME              12 (__aenter__)
+
+601         160 LOAD_CONST              79 (('exc_type', 'Optional[type[BaseException]]', 'exc_val', 'Optional[BaseException]', 'exc_tb', 'Optional[TracebackType]', 'return', 'None'))
+            162 LOAD_CONST              42 (<code object __aexit__ at 0x0000027041E25B30, file "bleak\__init__.py", line 601>)
+            164 MAKE_FUNCTION            4 (annotations)
+            166 STORE_NAME              13 (__aexit__)
+
+611         168 LOAD_CONST              80 (('kwargs', 'Any', 'return', 'None'))
+            170 LOAD_CONST              43 (<code object connect at 0x0000027041E25C30, file "bleak\__init__.py", line 611>)
+            172 MAKE_FUNCTION            4 (annotations)
+            174 STORE_NAME              14 (connect)
+
+622         176 LOAD_CONST              81 (('return', 'None'))
+            178 LOAD_CONST              44 (<code object disconnect at 0x0000027041E25D30, file "bleak\__init__.py", line 622>)
+            180 MAKE_FUNCTION            4 (annotations)
+            182 STORE_NAME              15 (disconnect)
+
+630         184 LOAD_CONST              82 (('args', 'Any', 'kwargs', 'Any', 'return', 'None'))
+            186 LOAD_CONST              46 (<code object pair at 0x0000027041E25E30, file "bleak\__init__.py", line 630>)
+            188 MAKE_FUNCTION            4 (annotations)
+            190 STORE_NAME              16 (pair)
+
+644         192 LOAD_CONST              81 (('return', 'None'))
+            194 LOAD_CONST              47 (<code object unpair at 0x0000027041E25F30, file "bleak\__init__.py", line 644>)
+            196 MAKE_FUNCTION            4 (annotations)
+            198 STORE_NAME              17 (unpair)
+
+658         200 LOAD_NAME                5 (property)
+
+659         202 LOAD_CONST              83 (('return', 'bool'))
+            204 LOAD_CONST              48 (<code object is_connected at 0x0000027041E35B50, file "bleak\__init__.py", line 658>)
+            206 MAKE_FUNCTION            4 (annotations)
+
+658         208 PRECALL                  0
+            212 CALL                     0
+
+659         222 STORE_NAME              18 (is_connected)
+
+671         224 LOAD_NAME                5 (property)
+
+672         226 LOAD_CONST              84 (('return', 'BleakGATTServiceCollection'))
+            228 LOAD_CONST              50 (<code object services at 0x0000027041E32230, file "bleak\__init__.py", line 671>)
+            230 MAKE_FUNCTION            4 (annotations)
+
+671         232 PRECALL                  0
+            236 CALL                     0
+
+672         246 STORE_NAME              19 (services)
+
+688         248 LOAD_CONST              85 (('char_specifier', 'Union[BleakGATTCharacteristic, int, str, uuid.UUID]', 'kwargs', 'Any', 'return', 'bytearray'))
+            250 LOAD_CONST              54 (<code object read_gatt_char at 0x0000027041DE5590, file "bleak\__init__.py", line 688>)
+            252 MAKE_FUNCTION            4 (annotations)
+            254 STORE_NAME              20 (read_gatt_char)
+
+717         256 NOP
+
+713         258 LOAD_CONST              86 ((None,))
+            260 LOAD_CONST              87 (('char_specifier', 'Union[BleakGATTCharacteristic, int, str, uuid.UUID]', 'data', 'SizedBuffer', 'response', 'Optional[bool]', 'return', 'None'))
+            262 LOAD_CONST              59 (<code object write_gatt_char at 0x0000027041902A30, file "bleak\__init__.py", line 713>)
+            264 MAKE_FUNCTION            5 (defaults, annotations)
+            266 STORE_NAME              21 (write_gatt_char)
+
+786         268 BUILD_MAP                0
+
+787         270 BUILD_MAP                0
+
+779         272 LOAD_CONST              60 (('bluez', 'cb'))
+            274 BUILD_CONST_KEY_MAP      2
+            276 LOAD_CONST              88 (('char_specifier', 'Union[BleakGATTCharacteristic, int, str, uuid.UUID]', 'callback', 'Callable[[BleakGATTCharacteristic, bytearray], Union[None, Awaitable[None]]]', 'bluez', 'BlueZNotifyArgs', 'cb', 'CBStartNotifyArgs', 'kwargs', 'Any', 'return', 'None'))
+            278 LOAD_CONST              67 (<code object start_notify at 0x00000270418D5C30, file "bleak\__init__.py", line 779>)
+            280 MAKE_FUNCTION            6 (kwdefaults, annotations)
+            282 STORE_NAME              22 (start_notify)
+
+850         284 LOAD_CONST              89 (('char_specifier', 'Union[BleakGATTCharacteristic, int, str, uuid.UUID]', 'return', 'None'))
+            286 LOAD_CONST              68 (<code object stop_notify at 0x00000270419D7CC0, file "bleak\__init__.py", line 850>)
+            288 MAKE_FUNCTION            4 (annotations)
+            290 STORE_NAME              23 (stop_notify)
+
+874         292 LOAD_CONST              90 (('desc_specifier', 'Union[BleakGATTDescriptor, int]', 'kwargs', 'Any', 'return', 'bytearray'))
+            294 LOAD_CONST              71 (<code object read_gatt_descriptor at 0x0000027041DE56B0, file "bleak\__init__.py", line 874>)
+            296 MAKE_FUNCTION            4 (annotations)
+            298 STORE_NAME              24 (read_gatt_descriptor)
+
+898         300 LOAD_CONST              91 (('desc_specifier', 'Union[BleakGATTDescriptor, int]', 'data', 'SizedBuffer', 'return', 'None'))
+            302 LOAD_CONST              72 (<code object write_gatt_descriptor at 0x00000270419D7DF0, file "bleak\__init__.py", line 898>)
+            304 MAKE_FUNCTION            4 (annotations)
+            306 STORE_NAME              25 (write_gatt_descriptor)
+            308 LOAD_CONST               2 (None)
+            310 RETURN_VALUE
+
+    ### __init__ at line 504
+    # varnames: ('self', 'address_or_ble_device', 'disconnected_callback', 'services', 'timeout', 'pair', 'winrt', 'backend', 'kwargs', 'PlatformBleakClient', 'backend_id')
+    # names: ('get_platform_client_backend_type', '__name__', 'functools', 'partial', 'set', 'map', 'normalize_uuid_str', '_backend', '_pair_before_connect', '_backend_id')
+504           0 RESUME                   0
+
+518           2 LOAD_FAST                7 (backend)
+              4 POP_JUMP_FORWARD_IF_NOT_NONE    14 (to 34)
+
+517           6 LOAD_GLOBAL              1 (NULL + get_platform_client_backend_type)
+             18 PRECALL                  0
+             22 CALL                     0
+             32 JUMP_FORWARD             8 (to 50)
+
+519     >>   34 LOAD_FAST                7 (backend)
+             36 LOAD_FAST                7 (backend)
+             38 LOAD_ATTR                1 (__name__)
+             48 BUILD_TUPLE              2
+
+516     >>   50 UNPACK_SEQUENCE          2
+             54 STORE_FAST               9 (PlatformBleakClient)
+             56 STORE_FAST              10 (backend_id)
+
+522          58 PUSH_NULL
+             60 LOAD_FAST                9 (PlatformBleakClient)
+
+523          62 LOAD_FAST                1 (address_or_ble_device)
+
+522          64 BUILD_TUPLE              1
+
+526          66 LOAD_FAST                2 (disconnected_callback)
+             68 POP_JUMP_FORWARD_IF_NOT_NONE     2 (to 74)
+
+525          70 LOAD_CONST               0 (None)
+             72 JUMP_FORWARD            20 (to 114)
+
+527     >>   74 LOAD_GLOBAL              5 (NULL + functools)
+             86 LOAD_ATTR                3 (partial)
+             96 LOAD_FAST                2 (disconnected_callback)
+             98 LOAD_FAST                0 (self)
+            100 PRECALL                  2
+            104 CALL                     2
+
+530     >>  114 LOAD_FAST                3 (services)
+            116 POP_JUMP_FORWARD_IF_NOT_NONE     2 (to 122)
+            118 LOAD_CONST               0 (None)
+            120 JUMP_FORWARD            33 (to 188)
+        >>  122 LOAD_GLOBAL              9 (NULL + set)
+            134 LOAD_GLOBAL             11 (NULL + map)
+            146 LOAD_GLOBAL             12 (normalize_uuid_str)
+            158 LOAD_FAST                3 (services)
+            160 PRECALL                  2
+            164 CALL                     2
+            174 PRECALL                  1
+            178 CALL                     1
+
+532     >>  188 LOAD_FAST                4 (timeout)
+
+533         190 LOAD_FAST                6 (winrt)
+
+522         192 LOAD_CONST               1 (('disconnected_callback', 'services', 'timeout', 'winrt'))
+            194 BUILD_CONST_KEY_MAP      4
+
+534         196 LOAD_FAST                8 (kwargs)
+
+522         198 DICT_MERGE               1
+            200 CALL_FUNCTION_EX         1
+            202 LOAD_FAST                0 (self)
+            204 STORE_ATTR               7 (_backend)
+
+536         214 LOAD_FAST                5 (pair)
+            216 LOAD_FAST                0 (self)
+            218 STORE_ATTR               8 (_pair_before_connect)
+
+537         228 LOAD_FAST               10 (backend_id)
+            230 LOAD_FAST                0 (self)
+            232 STORE_ATTR               9 (_backend_id)
+            242 LOAD_CONST               0 (None)
+            244 RETURN_VALUE
+
+    ### backend_id at line 539
+    # varnames: ('self',)
+    # names: ('_backend_id',)
+    # const[0]: '\n        Gets the identifier of the backend in use.\n\n        The value is one of the :class:`BleakBackend` enum values in case of\n        built-in backends, or a string identifying a custom backend.\n\n        .. versionadded:: 2.0\n        '
+539           0 RESUME                   0
+
+549           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_backend_id)
+             14 RETURN_VALUE
+
+    ### name at line 553
+    # varnames: ('self',)
+    # names: ('_backend', 'name')
+    # const[0]: "\n        Gets a human-readable name for the peripheral device.\n\n        The name can be somewhat OS-dependent. It is usually the name provided\n        by the standard Device Name characteristic, if present or the name\n        provided by the advertising data. If neither is available, it will be\n        a Bluetooth address separated with dashes (``-``) instead of colons\n        (``:``) (or a UUID on Apple devices). It may also be possible to override\n        the device name using the OS's Bluetooth settings.\n\n        .. versionadded:: 1.1\n        "
+553           0 RESUME                   0
+
+567           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_backend)
+             14 LOAD_ATTR                1 (name)
+             24 RETURN_VALUE
+
+    ### address at line 569
+    # varnames: ('self',)
+    # names: ('_backend', 'address')
+    # const[0]: '\n        Gets the Bluetooth address of this device (UUID on macOS).\n        '
+569           0 RESUME                   0
+
+574           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_backend)
+             14 LOAD_ATTR                1 (address)
+             24 RETURN_VALUE
+
+    ### mtu_size at line 576
+    # varnames: ('self',)
+    # names: ('_backend', 'mtu_size')
+    # const[0]: '\n        Gets the negotiated MTU size in bytes for the active connection.\n\n        Consider using :attr:`bleak.backends.characteristic.BleakGATTCharacteristic.max_write_without_response_size` instead.\n\n        .. warning:: The BlueZ backend will always return 23 (the minimum MTU size).\n            See the ``mtu_size.py`` example for a way to hack around this.\n\n        '
+576           0 RESUME                   0
+
+587           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_backend)
+             14 LOAD_ATTR                1 (mtu_size)
+             24 RETURN_VALUE
+
+    ### __str__ at line 589
+    # varnames: ('self',)
+    # names: ('__class__', '__name__', 'address')
+    # const[1]: ', '
+589           0 RESUME                   0
+
+590           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (__class__)
+             14 LOAD_ATTR                1 (__name__)
+             24 FORMAT_VALUE             0
+             26 LOAD_CONST               1 (', ')
+             28 LOAD_FAST                0 (self)
+             30 LOAD_ATTR                2 (address)
+             40 FORMAT_VALUE             0
+             42 BUILD_STRING             3
+             44 RETURN_VALUE
+
+    ### __repr__ at line 592
+    # varnames: ('self',)
+    # names: ('__class__', '__name__', 'address', 'type', '_backend')
+    # const[1]: '<'
+    # const[2]: ', '
+    # const[3]: '>'
+592           0 RESUME                   0
+
+593           2 LOAD_CONST               1 ('<')
+              4 LOAD_FAST                0 (self)
+              6 LOAD_ATTR                0 (__class__)
+             16 LOAD_ATTR                1 (__name__)
+             26 FORMAT_VALUE             0
+             28 LOAD_CONST               2 (', ')
+             30 LOAD_FAST                0 (self)
+             32 LOAD_ATTR                2 (address)
+             42 FORMAT_VALUE             0
+             44 LOAD_CONST               2 (', ')
+             46 LOAD_GLOBAL              7 (NULL + type)
+             58 LOAD_FAST                0 (self)
+             60 LOAD_ATTR                4 (_backend)
+             70 PRECALL                  1
+             74 CALL                     1
+             84 FORMAT_VALUE             0
+             86 LOAD_CONST               3 ('>')
+             88 BUILD_STRING             7
+             90 RETURN_VALUE
+
+    ### __aenter__ at line 597
+    # varnames: ('self',)
+    # names: ('connect',)
+597           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+598           6 LOAD_FAST                0 (self)
+              8 LOAD_METHOD              0 (connect)
+             30 PRECALL                  0
+             34 CALL                     0
+             44 GET_AWAITABLE            0
+             46 LOAD_CONST               0 (None)
+        >>   48 SEND                     3 (to 56)
+             50 YIELD_VALUE
+             52 RESUME                   3
+             54 JUMP_BACKWARD_NO_INTERRUPT     4 (to 48)
+        >>   56 POP_TOP
+
+599          58 LOAD_FAST                0 (self)
+             60 RETURN_VALUE
+
+    ### __aexit__ at line 601
+    # varnames: ('self', 'exc_type', 'exc_val', 'exc_tb')
+    # names: ('disconnect',)
+601           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+607           6 LOAD_FAST                0 (self)
+              8 LOAD_METHOD              0 (disconnect)
+             30 PRECALL                  0
+             34 CALL                     0
+             44 GET_AWAITABLE            0
+             46 LOAD_CONST               0 (None)
+        >>   48 SEND                     3 (to 56)
+             50 YIELD_VALUE
+             52 RESUME                   3
+             54 JUMP_BACKWARD_NO_INTERRUPT     4 (to 48)
+        >>   56 POP_TOP
+             58 LOAD_CONST               0 (None)
+             60 RETURN_VALUE
+
+    ### connect at line 611
+    # varnames: ('self', 'kwargs')
+    # names: ('_backend', 'connect', '_pair_before_connect')
+    # const[0]: 'Connect to the specified GATT server.\n\n        Args:\n            **kwargs: For backwards compatibility - should not be used.\n\n        .. versionchanged:: 1.0\n            No longer returns ``True``. Instead, the return type is ``None``.\n        '
+611           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+620           6 PUSH_NULL
+              8 LOAD_FAST                0 (self)
+             10 LOAD_ATTR                0 (_backend)
+             20 LOAD_ATTR                1 (connect)
+             30 LOAD_FAST                0 (self)
+             32 LOAD_ATTR                2 (_pair_before_connect)
+             42 BUILD_TUPLE              1
+             44 BUILD_MAP                0
+             46 LOAD_FAST                1 (kwargs)
+             48 DICT_MERGE               1
+             50 CALL_FUNCTION_EX         1
+             52 GET_AWAITABLE            0
+             54 LOAD_CONST               1 (None)
+        >>   56 SEND                     3 (to 64)
+             58 YIELD_VALUE
+             60 RESUME                   3
+             62 JUMP_BACKWARD_NO_INTERRUPT     4 (to 56)
+        >>   64 POP_TOP
+             66 LOAD_CONST               1 (None)
+             68 RETURN_VALUE
+
+    ### disconnect at line 622
+    # varnames: ('self',)
+    # names: ('_backend', 'disconnect')
+    # const[0]: 'Disconnect from the specified GATT server.\n\n        .. versionchanged:: 1.0\n            No longer returns ``True``. Instead, the return type is ``None``.\n        '
+622           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+628           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_backend)
+             18 LOAD_METHOD              1 (disconnect)
+             40 PRECALL                  0
+             44 CALL                     0
+             54 GET_AWAITABLE            0
+             56 LOAD_CONST               1 (None)
+        >>   58 SEND                     3 (to 66)
+             60 YIELD_VALUE
+             62 RESUME                   3
+             64 JUMP_BACKWARD_NO_INTERRUPT     4 (to 58)
+        >>   66 POP_TOP
+             68 LOAD_CONST               1 (None)
+             70 RETURN_VALUE
+
+    ### pair at line 630
+    # varnames: ('self', 'args', 'kwargs')
+    # names: ('_backend', 'pair')
+    # const[0]: '\n        Pair with the specified GATT server.\n\n        This method is not available on macOS. Instead of manually initiating\n        paring, the user will be prompted to pair the device the first time\n        that a characteristic that requires authentication is read or written.\n        This method may have backend-specific additional keyword arguments.\n\n        .. versionchanged:: 1.0\n            No longer returns ``True``. Instead, the return type is ``None``.\n        '
+630           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+642           6 PUSH_NULL
+              8 LOAD_FAST                0 (self)
+             10 LOAD_ATTR                0 (_backend)
+             20 LOAD_ATTR                1 (pair)
+             30 LOAD_FAST                1 (args)
+             32 BUILD_MAP                0
+             34 LOAD_FAST                2 (kwargs)
+             36 DICT_MERGE               1
+             38 CALL_FUNCTION_EX         1
+             40 GET_AWAITABLE            0
+             42 LOAD_CONST               1 (None)
+        >>   44 SEND                     3 (to 52)
+             46 YIELD_VALUE
+             48 RESUME                   3
+             50 JUMP_BACKWARD_NO_INTERRUPT     4 (to 44)
+        >>   52 POP_TOP
+             54 LOAD_CONST               1 (None)
+             56 RETURN_VALUE
+
+    ### unpair at line 644
+    # varnames: ('self',)
+    # names: ('_backend', 'unpair')
+    # const[0]: '\n        Unpair from the specified GATT server.\n\n        Unpairing will also disconnect the device.\n\n        This method is only available on Windows and Linux and will raise an\n        exception on other platforms.\n\n        .. versionchanged:: 1.0\n            No longer returns ``True``. Instead, the return type is ``None``.\n        '
+644           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+656           6 LOAD_FAST                0 (self)
+              8 LOAD_ATTR                0 (_backend)
+             18 LOAD_METHOD              1 (unpair)
+             40 PRECALL                  0
+             44 CALL                     0
+             54 GET_AWAITABLE            0
+             56 LOAD_CONST               1 (None)
+        >>   58 SEND                     3 (to 66)
+             60 YIELD_VALUE
+             62 RESUME                   3
+             64 JUMP_BACKWARD_NO_INTERRUPT     4 (to 58)
+        >>   66 POP_TOP
+             68 LOAD_CONST               1 (None)
+             70 RETURN_VALUE
+
+    ### is_connected at line 658
+    # varnames: ('self',)
+    # names: ('_backend', 'is_connected')
+    # const[0]: '\n        Check connection status between this client and the GATT server.\n\n        Returns:\n            Boolean representing connection status.\n\n        '
+658           0 RESUME                   0
+
+667           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_backend)
+             14 LOAD_ATTR                1 (is_connected)
+             24 RETURN_VALUE
+
+    ### services at line 671
+    # varnames: ('self',)
+    # names: ('_backend', 'services', 'BleakError')
+    # const[0]: '\n        Gets the collection of GATT services available on the device.\n\n        The returned value is only valid as long as the device is connected.\n\n        Raises:\n            BleakError: if service discovery has not been performed yet during this connection.\n        '
+    # const[1]: 'Service Discovery has not been performed yet'
+671           0 RESUME                   0
+
+681           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (_backend)
+             14 LOAD_ATTR                1 (services)
+             24 POP_JUMP_FORWARD_IF_TRUE    15 (to 56)
+
+682          26 LOAD_GLOBAL              5 (NULL + BleakError)
+             38 LOAD_CONST               1 ('Service Discovery has not been performed yet')
+             40 PRECALL                  1
+             44 CALL                     1
+             54 RAISE_VARARGS            1
+
+684     >>   56 LOAD_FAST                0 (self)
+             58 LOAD_ATTR                0 (_backend)
+             68 LOAD_ATTR                1 (services)
+             78 RETURN_VALUE
+
+    ### read_gatt_char at line 688
+    # varnames: ('self', 'char_specifier', 'kwargs', 'characteristic')
+    # names: ('_resolve_characteristic', 'services', '_backend', 'read_gatt_char')
+    # const[0]: '\n        Perform read operation on the specified GATT characteristic.\n\n        Args:\n            char_specifier:\n                The characteristic to read from, specified by either integer\n                handle, UUID or directly by the BleakGATTCharacteristic object\n                representing it.\n\n        Returns:\n            The read data.\n\n        Raises:\n            BleakCharacteristicNotFoundError: if a characteristic with the\n                handle or UUID specified by ``char_specifier`` could not be found.\n            backend-specific exceptions: if the read operation failed.\n        '
+688           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+710           6 LOAD_GLOBAL              1 (NULL + _resolve_characteristic)
+             18 LOAD_FAST                1 (char_specifier)
+             20 LOAD_FAST                0 (self)
+             22 LOAD_ATTR                1 (services)
+             32 PRECALL                  2
+             36 CALL                     2
+             46 STORE_FAST               3 (characteristic)
+
+711          48 PUSH_NULL
+             50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                2 (_backend)
+             62 LOAD_ATTR                3 (read_gatt_char)
+             72 LOAD_FAST                3 (characteristic)
+             74 BUILD_TUPLE              1
+             76 BUILD_MAP                0
+             78 LOAD_FAST                2 (kwargs)
+             80 DICT_MERGE               1
+             82 CALL_FUNCTION_EX         1
+             84 GET_AWAITABLE            0
+             86 LOAD_CONST               1 (None)
+        >>   88 SEND                     3 (to 96)
+             90 YIELD_VALUE
+             92 RESUME                   3
+             94 JUMP_BACKWARD_NO_INTERRUPT     4 (to 88)
+        >>   96 RETURN_VALUE
+
+    ### write_gatt_char at line 713
+    # varnames: ('self', 'char_specifier', 'data', 'response', 'characteristic')
+    # names: ('_resolve_characteristic', 'services', 'properties', '_backend', 'write_gatt_char')
+    # const[0]: '\n        Perform a write operation on the specified GATT characteristic.\n\n        There are two possible kinds of writes. *Write with response* (sometimes\n        called a *Request*) will write the data then wait for a response from\n        the remote device. *Write without response* (sometimes called *Command*)\n        will queue data to be written and return immediately.\n\n        Each characteristic may support one kind or the other or both or neither.\n        Consult the device\'s documentation or inspect the properties of the\n        characteristic to find out which kind of writes are supported.\n\n        Args:\n            char_specifier:\n                The characteristic to write to, specified by either integer\n                handle, UUID or directly by the :class:`~bleak.backends.characteristic.BleakGATTCharacteristic`\n                object representing it. If a device has more than one characteristic\n                with the same UUID, then attempting to use the UUID wil fail and\n                a characteristic object must be used instead.\n            data:\n                The data to send. When a write-with-response operation is used,\n                the length of the data is limited to 512 bytes. When a\n                write-without-response operation is used, the length of the\n                data is limited to :attr:`~bleak.backends.characteristic.BleakGATTCharacteristic.max_write_without_response_size`.\n                Any type that supports the buffer protocol can be passed.\n            response:\n                If ``True``, a write-with-response operation will be used. If\n                ``False``, a write-without-response operation will be used.\n                Omitting the argument is deprecated and may raise a warning.\n                If this arg is omitted, the default behavior is to check the\n                characteristic properties to see if the "write" property is\n                present. If it is, a write-with-response operation will be\n                used. Note: some devices may incorrectly report or omit the\n                property, which is why an explicit argument is encouraged.\n\n        Raises:\n            BleakCharacteristicNotFoundError: if a characteristic with the\n                handle or UUID specified by ``char_specifier`` could not be found.\n            backend-specific exceptions: if the write operation failed.\n\n        .. versionchanged:: 0.21\n            The default behavior when ``response=`` is omitted was changed.\n\n        Example::\n\n            MY_CHAR_UUID = "1234"\n            ...\n            await client.write_gatt_char(MY_CHAR_UUID, b"\\x00\\x01\\x02\\x03", response=True)\n        '
+    # const[2]: 'write'
+713           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+768           6 LOAD_GLOBAL              1 (NULL + _resolve_characteristic)
+             18 LOAD_FAST                1 (char_specifier)
+             20 LOAD_FAST                0 (self)
+             22 LOAD_ATTR                1 (services)
+             32 PRECALL                  2
+             36 CALL                     2
+             46 STORE_FAST               4 (characteristic)
+
+770          48 LOAD_FAST                3 (response)
+             50 POP_JUMP_FORWARD_IF_NOT_NONE     9 (to 70)
+
+775          52 LOAD_CONST               2 ('write')
+             54 LOAD_FAST                4 (characteristic)
+             56 LOAD_ATTR                2 (properties)
+             66 CONTAINS_OP              0
+             68 STORE_FAST               3 (response)
+
+777     >>   70 LOAD_FAST                0 (self)
+             72 LOAD_ATTR                3 (_backend)
+             82 LOAD_METHOD              4 (write_gatt_char)
+            104 LOAD_FAST                4 (characteristic)
+            106 LOAD_FAST                2 (data)
+            108 LOAD_FAST                3 (response)
+            110 PRECALL                  3
+            114 CALL                     3
+            124 GET_AWAITABLE            0
+            126 LOAD_CONST               1 (None)
+        >>  128 SEND                     3 (to 136)
+            130 YIELD_VALUE
+            132 RESUME                   3
+            134 JUMP_BACKWARD_NO_INTERRUPT     4 (to 128)
+        >>  136 POP_TOP
+            138 LOAD_CONST               1 (None)
+            140 RETURN_VALUE
+
+    ### start_notify at line 779
+    # varnames: ('self', 'char_specifier', 'callback', 'bluez', 'cb', 'kwargs', 'wrapped_callback')
+    # names: ('is_connected', 'BleakError', '_resolve_characteristic', 'services', 'inspect', 'iscoroutinefunction', 'functools', 'partial', '_backend', 'start_notify')
+    # const[0]: '\n        Activate notifications/indications on a characteristic.\n\n        Callbacks must accept two inputs. The first will be the characteristic\n        and the second will be a ``bytearray`` containing the data received.\n\n        .. code-block:: python\n\n            def callback(sender: BleakGATTCharacteristic, data: bytearray):\n                print(f"{sender}: {data}")\n\n            client.start_notify(char_uuid, callback)\n\n        Args:\n            char_specifier:\n                The characteristic to activate notifications/indications on a\n                characteristic, specified by either integer handle,\n                UUID or directly by the BleakGATTCharacteristic object representing it.\n            callback:\n                The function to be called on notification. Can be regular\n                function or async function.\n            bluez:\n                BlueZ backend-specific arguments.\n            cb:\n                CoreBluetooth backend-specific arguments.\n\n        Raises:\n            BleakCharacteristicNotFoundError: if a characteristic with the\n                handle or UUID specified by ``char_specifier`` could not be found.\n            backend-specific exceptions: if the start notification operation failed.\n\n        .. versionchanged:: 0.18\n            The first argument of the callback is now a :class:`BleakGATTCharacteristic`\n            instead of an ``int``.\n\n        .. versionchanged:: 1.0\n            Added the ``cb`` parameter.\n\n        .. versionchanged:: 2.1\n            Added the ``bluez`` parameter.\n        '
+    # const[1]: 'Not connected'
+    # const[2]: 'data'
+    # const[3]: 'bytearray'
+    # const[4]: 'return'
+    # const[5]: 'None'
+              0 MAKE_CELL                2 (callback)
+              2 MAKE_CELL                7 (characteristic)
+
+779           4 RETURN_GENERATOR
+              6 POP_TOP
+              8 RESUME                   0
+
+831          10 LOAD_FAST                0 (self)
+             12 LOAD_ATTR                0 (is_connected)
+             22 POP_JUMP_FORWARD_IF_TRUE    15 (to 54)
+
+832          24 LOAD_GLOBAL              3 (NULL + BleakError)
+             36 LOAD_CONST               1 ('Not connected')
+             38 PRECALL                  1
+             42 CALL                     1
+             52 RAISE_VARARGS            1
+
+834     >>   54 LOAD_GLOBAL              5 (NULL + _resolve_characteristic)
+             66 LOAD_FAST                1 (char_specifier)
+             68 LOAD_FAST                0 (self)
+             70 LOAD_ATTR                3 (services)
+             80 PRECALL                  2
+             84 CALL                     2
+             94 STORE_DEREF              7 (characteristic)
+
+836          96 LOAD_GLOBAL              9 (NULL + inspect)
+            108 LOAD_ATTR                5 (iscoroutinefunction)
+            118 LOAD_DEREF               2 (callback)
+            120 PRECALL                  1
+            124 CALL                     1
+            134 POP_JUMP_FORWARD_IF_FALSE     8 (to 152)
+
+838         136 LOAD_CONST               9 (('data', 'bytearray', 'return', 'None'))
+            138 LOAD_CLOSURE             2 (callback)
+            140 LOAD_CLOSURE             7 (characteristic)
+            142 BUILD_TUPLE              2
+            144 LOAD_CONST               6 (<code object wrapped_callback at 0x0000027041886E30, file "bleak\__init__.py", line 838>)
+            146 MAKE_FUNCTION           12 (annotations, closure)
+            148 STORE_FAST               6 (wrapped_callback)
+            150 JUMP_FORWARD            21 (to 194)
+
+844     >>  152 LOAD_GLOBAL             13 (NULL + functools)
+            164 LOAD_ATTR                7 (partial)
+            174 LOAD_DEREF               2 (callback)
+            176 LOAD_DEREF               7 (characteristic)
+            178 PRECALL                  2
+            182 CALL                     2
+            192 STORE_FAST               6 (wrapped_callback)
+
+846     >>  194 PUSH_NULL
+            196 LOAD_FAST                0 (self)
+            198 LOAD_ATTR                8 (_backend)
+            208 LOAD_ATTR                9 (start_notify)
+
+847         218 LOAD_DEREF               7 (characteristic)
+            220 LOAD_FAST                6 (wrapped_callback)
+
+846         222 BUILD_TUPLE              2
+
+847         224 LOAD_FAST                3 (bluez)
+            226 LOAD_FAST                4 (cb)
+
+846         228 LOAD_CONST               7 (('bluez', 'cb'))
+            230 BUILD_CONST_KEY_MAP      2
+
+847         232 LOAD_FAST                5 (kwargs)
+
+846         234 DICT_MERGE               1
+            236 CALL_FUNCTION_EX         1
+            238 GET_AWAITABLE            0
+            240 LOAD_CONST               8 (None)
+        >>  242 SEND                     3 (to 250)
+            244 YIELD_VALUE
+            246 RESUME                   3
+            248 JUMP_BACKWARD_NO_INTERRUPT     4 (to 242)
+        >>  250 POP_TOP
+            252 LOAD_CONST               8 (None)
+            254 RETURN_VALUE
+
+      ### wrapped_callback at line 838
+      # varnames: ('data', 'task')
+      # names: ('asyncio', 'create_task', '_background_tasks', 'add', 'add_done_callback', 'discard')
+              0 COPY_FREE_VARS           2
+
+838           2 RESUME                   0
+
+839           4 LOAD_GLOBAL              1 (NULL + asyncio)
+             16 LOAD_ATTR                1 (create_task)
+             26 PUSH_NULL
+             28 LOAD_DEREF               2 (callback)
+             30 LOAD_DEREF               3 (characteristic)
+             32 LOAD_FAST                0 (data)
+             34 PRECALL                  2
+             38 CALL                     2
+             48 PRECALL                  1
+             52 CALL                     1
+             62 STORE_FAST               1 (task)
+
+840          64 LOAD_GLOBAL              4 (_background_tasks)
+             76 LOAD_METHOD              3 (add)
+             98 LOAD_FAST                1 (task)
+            100 PRECALL                  1
+            104 CALL                     1
+            114 POP_TOP
+
+841         116 LOAD_FAST                1 (task)
+            118 LOAD_METHOD              4 (add_done_callback)
+            140 LOAD_GLOBAL              4 (_background_tasks)
+            152 LOAD_ATTR                5 (discard)
+            162 PRECALL                  1
+            166 CALL                     1
+            176 POP_TOP
+            178 LOAD_CONST               0 (None)
+            180 RETURN_VALUE
+
+    ### stop_notify at line 850
+    # varnames: ('self', 'char_specifier', 'characteristic')
+    # names: ('_resolve_characteristic', 'services', '_backend', 'stop_notify')
+    # const[0]: '\n        Deactivate notification/indication on a specified characteristic.\n\n        Args:\n            char_specifier:\n                The characteristic to deactivate notification/indication on,\n                specified by either integer handle, UUID or directly by the\n                BleakGATTCharacteristic object representing it.\n\n        Raises:\n            BleakCharacteristicNotFoundError: if a characteristic with the\n                handle or UUID specified by ``char_specifier`` could not be found.\n            backend-specific exceptions: if the stop notification operation failed.\n\n        .. tip:: Notifications are stopped automatically on disconnect, so this\n            method does not need to be called unless notifications need to be\n            stopped some time before the device disconnects.\n        '
+850           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+871           6 LOAD_GLOBAL              1 (NULL + _resolve_characteristic)
+             18 LOAD_FAST                1 (char_specifier)
+             20 LOAD_FAST                0 (self)
+             22 LOAD_ATTR                1 (services)
+             32 PRECALL                  2
+             36 CALL                     2
+             46 STORE_FAST               2 (characteristic)
+
+872          48 LOAD_FAST                0 (self)
+             50 LOAD_ATTR                2 (_backend)
+             60 LOAD_METHOD              3 (stop_notify)
+             82 LOAD_FAST                2 (characteristic)
+             84 PRECALL                  1
+             88 CALL                     1
+             98 GET_AWAITABLE            0
+            100 LOAD_CONST               1 (None)
+        >>  102 SEND                     3 (to 110)
+            104 YIELD_VALUE
+            106 RESUME                   3
+            108 JUMP_BACKWARD_NO_INTERRUPT     4 (to 102)
+        >>  110 POP_TOP
+            112 LOAD_CONST               1 (None)
+            114 RETURN_VALUE
+
+    ### read_gatt_descriptor at line 874
+    # varnames: ('self', 'desc_specifier', 'kwargs', 'descriptor')
+    # names: ('_resolve_descriptor', 'services', '_backend', 'read_gatt_descriptor')
+    # const[0]: '\n        Perform read operation on the specified GATT descriptor.\n\n        Args:\n            desc_specifier:\n                The descriptor to read from, specified by either integer handle\n                or directly by the BleakGATTDescriptor object representing it.\n\n        Raises:\n            BleakError: if the descriptor could not be found.\n            backend-specific exceptions: if the read operation failed.\n\n        Returns:\n            The read data.\n\n        '
+874           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+895           6 LOAD_GLOBAL              1 (NULL + _resolve_descriptor)
+             18 LOAD_FAST                1 (desc_specifier)
+             20 LOAD_FAST                0 (self)
+             22 LOAD_ATTR                1 (services)
+             32 PRECALL                  2
+             36 CALL                     2
+             46 STORE_FAST               3 (descriptor)
+
+896          48 PUSH_NULL
+             50 LOAD_FAST                0 (self)
+             52 LOAD_ATTR                2 (_backend)
+             62 LOAD_ATTR                3 (read_gatt_descriptor)
+             72 LOAD_FAST                3 (descriptor)
+             74 BUILD_TUPLE              1
+             76 BUILD_MAP                0
+             78 LOAD_FAST                2 (kwargs)
+             80 DICT_MERGE               1
+             82 CALL_FUNCTION_EX         1
+             84 GET_AWAITABLE            0
+             86 LOAD_CONST               1 (None)
+        >>   88 SEND                     3 (to 96)
+             90 YIELD_VALUE
+             92 RESUME                   3
+             94 JUMP_BACKWARD_NO_INTERRUPT     4 (to 88)
+        >>   96 RETURN_VALUE
+
+    ### write_gatt_descriptor at line 898
+    # varnames: ('self', 'desc_specifier', 'data', 'descriptor')
+    # names: ('_resolve_descriptor', 'services', '_backend', 'write_gatt_descriptor')
+    # const[0]: '\n        Perform a write operation on the specified GATT descriptor.\n\n        Args:\n            desc_specifier:\n                The descriptor to write to, specified by either integer handle\n                directly by the BleakGATTDescriptor object representing it.\n            data:\n                The data to send.\n\n        Raises:\n            BleakError: if the descriptor could not be found.\n            backend-specific exceptions: if the read operation failed.\n\n        '
+898           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+
+918           6 LOAD_GLOBAL              1 (NULL + _resolve_descriptor)
+             18 LOAD_FAST                1 (desc_specifier)
+             20 LOAD_FAST                0 (self)
+             22 LOAD_ATTR                1 (services)
+             32 PRECALL                  2
+             36 CALL                     2
+             46 STORE_FAST               3 (descriptor)
+
+919          48 LOAD_FAST                0 (self)
+             50 LOAD_ATTR                2 (_backend)
+             60 LOAD_METHOD              3 (write_gatt_descriptor)
+             82 LOAD_FAST                3 (descriptor)
+             84 LOAD_FAST                2 (data)
+             86 PRECALL                  2
+             90 CALL                     2
+            100 GET_AWAITABLE            0
+            102 LOAD_CONST               1 (None)
+        >>  104 SEND                     3 (to 112)
+            106 YIELD_VALUE
+            108 RESUME                   3
+            110 JUMP_BACKWARD_NO_INTERRUPT     4 (to 104)
+        >>  112 POP_TOP
+            114 LOAD_CONST               1 (None)
+            116 RETURN_VALUE

@@ -1,0 +1,311 @@
+
+### <module> at line 1
+# varnames: ()
+# names: ('__doc__', 'pygame.base', 'get_sdl_version', 'tuple', 'SoftwareVersion', 'PygameVersion', 'SDLVersion', '_sdl_tuple', 'SDL', 'ver', 'vernum', 'rev', '__all__')
+# const[0]: "Simply the current installed pygame version. The version information is\nstored in the regular pygame module as 'pygame.ver'. Keeping the version\ninformation also available in a separate module allows you to test the\npygame version without importing the main pygame module.\n\nThe python version information should always compare greater than any previous\nreleases. (hmm, until we get to versions > 10)\n"
+# const[4]: 'SoftwareVersion'
+# const[6]: 'PygameVersion'
+# const[8]: 'SDLVersion'
+# const[11]: '2.6.1'
+# const[13]: ''
+  0           0 RESUME                   0
+
+ 21           2 LOAD_CONST               0 ("Simply the current installed pygame version. The version information is\nstored in the regular pygame module as 'pygame.ver'. Keeping the version\ninformation also available in a separate module allows you to test the\npygame version without importing the main pygame module.\n\nThe python version information should always compare greater than any previous\nreleases. (hmm, until we get to versions > 10)\n")
+              4 STORE_NAME               0 (__doc__)
+
+ 29           6 LOAD_CONST               1 (0)
+              8 LOAD_CONST               2 (('get_sdl_version',))
+             10 IMPORT_NAME              1 (pygame.base)
+             12 IMPORT_FROM              2 (get_sdl_version)
+             14 STORE_NAME               2 (get_sdl_version)
+             16 POP_TOP
+
+ 35          18 PUSH_NULL
+             20 LOAD_BUILD_CLASS
+             22 LOAD_CONST               3 (<code object SoftwareVersion at 0x00000225B53875A0, file "pygame\version.py", line 35>)
+             24 MAKE_FUNCTION            0
+             26 LOAD_CONST               4 ('SoftwareVersion')
+             28 LOAD_NAME                3 (tuple)
+             30 PRECALL                  3
+             34 CALL                     3
+             44 STORE_NAME               4 (SoftwareVersion)
+
+ 56          46 PUSH_NULL
+             48 LOAD_BUILD_CLASS
+             50 LOAD_CONST               5 (<code object PygameVersion at 0x00000225B5343D20, file "pygame\version.py", line 56>)
+             52 MAKE_FUNCTION            0
+             54 LOAD_CONST               6 ('PygameVersion')
+             56 LOAD_NAME                4 (SoftwareVersion)
+             58 PRECALL                  3
+             62 CALL                     3
+             72 STORE_NAME               5 (PygameVersion)
+
+ 61          74 PUSH_NULL
+             76 LOAD_BUILD_CLASS
+             78 LOAD_CONST               7 (<code object SDLVersion at 0x00000225B5343EC0, file "pygame\version.py", line 61>)
+             80 MAKE_FUNCTION            0
+             82 LOAD_CONST               8 ('SDLVersion')
+             84 LOAD_NAME                4 (SoftwareVersion)
+             86 PRECALL                  3
+             90 CALL                     3
+            100 STORE_NAME               6 (SDLVersion)
+
+ 66         102 PUSH_NULL
+            104 LOAD_NAME                2 (get_sdl_version)
+            106 PRECALL                  0
+            110 CALL                     0
+            120 STORE_NAME               7 (_sdl_tuple)
+
+ 67         122 PUSH_NULL
+            124 LOAD_NAME                6 (SDLVersion)
+            126 LOAD_NAME                7 (_sdl_tuple)
+            128 LOAD_CONST               1 (0)
+            130 BINARY_SUBSCR
+            140 LOAD_NAME                7 (_sdl_tuple)
+            142 LOAD_CONST               9 (1)
+            144 BINARY_SUBSCR
+            154 LOAD_NAME                7 (_sdl_tuple)
+            156 LOAD_CONST              10 (2)
+            158 BINARY_SUBSCR
+            168 PRECALL                  3
+            172 CALL                     3
+            182 STORE_NAME               8 (SDL)
+
+ 68         184 LOAD_CONST              11 ('2.6.1')
+            186 STORE_NAME               9 (ver)
+
+ 69         188 PUSH_NULL
+            190 LOAD_NAME                5 (PygameVersion)
+            192 LOAD_CONST              10 (2)
+            194 LOAD_CONST              12 (6)
+            196 LOAD_CONST               9 (1)
+            198 PRECALL                  3
+            202 CALL                     3
+            212 STORE_NAME              10 (vernum)
+
+ 70         214 LOAD_CONST              13 ('')
+            216 STORE_NAME              11 (rev)
+
+ 72         218 BUILD_LIST               0
+            220 LOAD_CONST              14 (('SDL', 'ver', 'vernum', 'rev'))
+            222 LIST_EXTEND              1
+            224 STORE_NAME              12 (__all__)
+            226 LOAD_CONST              15 (None)
+            228 RETURN_VALUE
+
+  ### SoftwareVersion at line 35
+  # varnames: ()
+  # names: ('__name__', '__module__', '__qualname__', '__doc__', '__slots__', 'fields', '__new__', '__repr__', '__str__', 'property', 'major', 'minor', 'patch')
+  # const[0]: 'SoftwareVersion'
+  # const[1]: '\n    A class for storing data about software versions.\n    '
+ 35           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('SoftwareVersion')
+              8 STORE_NAME               2 (__qualname__)
+
+ 36          10 LOAD_CONST               1 ('\n    A class for storing data about software versions.\n    ')
+             12 STORE_NAME               3 (__doc__)
+
+ 39          14 LOAD_CONST               2 (())
+             16 STORE_NAME               4 (__slots__)
+
+ 40          18 LOAD_CONST               3 (('major', 'minor', 'patch'))
+             20 STORE_NAME               5 (fields)
+
+ 42          22 LOAD_CONST               4 (<code object __new__ at 0x00000225B53B3B30, file "pygame\version.py", line 42>)
+             24 MAKE_FUNCTION            0
+             26 STORE_NAME               6 (__new__)
+
+ 45          28 LOAD_CONST               5 (<code object __repr__ at 0x00000225B532E550, file "pygame\version.py", line 45>)
+             30 MAKE_FUNCTION            0
+             32 STORE_NAME               7 (__repr__)
+
+ 49          34 LOAD_CONST               6 (<code object __str__ at 0x00000225B578F000, file "pygame\version.py", line 49>)
+             36 MAKE_FUNCTION            0
+             38 STORE_NAME               8 (__str__)
+
+ 52          40 PUSH_NULL
+             42 LOAD_NAME                9 (property)
+             44 LOAD_CONST               7 (<code object <lambda> at 0x00000225B5340370, file "pygame\version.py", line 52>)
+             46 MAKE_FUNCTION            0
+             48 PRECALL                  1
+             52 CALL                     1
+             62 STORE_NAME              10 (major)
+
+ 53          64 PUSH_NULL
+             66 LOAD_NAME                9 (property)
+             68 LOAD_CONST               8 (<code object <lambda> at 0x00000225B53436A0, file "pygame\version.py", line 53>)
+             70 MAKE_FUNCTION            0
+             72 PRECALL                  1
+             76 CALL                     1
+             86 STORE_NAME              11 (minor)
+
+ 54          88 PUSH_NULL
+             90 LOAD_NAME                9 (property)
+             92 LOAD_CONST               9 (<code object <lambda> at 0x00000225B53439E0, file "pygame\version.py", line 54>)
+             94 MAKE_FUNCTION            0
+             96 PRECALL                  1
+            100 CALL                     1
+            110 STORE_NAME              12 (patch)
+            112 LOAD_CONST              10 (None)
+            114 RETURN_VALUE
+
+    ### __new__ at line 42
+    # varnames: ('cls', 'major', 'minor', 'patch')
+    # names: ('tuple', '__new__')
+ 42           0 RESUME                   0
+
+ 43           2 LOAD_GLOBAL              0 (tuple)
+             14 LOAD_METHOD              1 (__new__)
+             36 LOAD_FAST                0 (cls)
+             38 LOAD_FAST                1 (major)
+             40 LOAD_FAST                2 (minor)
+             42 LOAD_FAST                3 (patch)
+             44 BUILD_TUPLE              3
+             46 PRECALL                  2
+             50 CALL                     2
+             60 RETURN_VALUE
+
+    ### __repr__ at line 45
+    # varnames: ('self', 'fields')
+    # names: ('zip', 'fields', 'str', '__class__', '__name__', 'join')
+    # const[2]: '('
+    # const[3]: ', '
+    # const[4]: ')'
+ 45           0 RESUME                   0
+
+ 46           2 LOAD_CONST               1 (<code object <genexpr> at 0x00000225B5271D40, file "pygame\version.py", line 46>)
+              4 MAKE_FUNCTION            0
+              6 LOAD_GLOBAL              1 (NULL + zip)
+             18 LOAD_FAST                0 (self)
+             20 LOAD_ATTR                1 (fields)
+             30 LOAD_FAST                0 (self)
+             32 PRECALL                  2
+             36 CALL                     2
+             46 GET_ITER
+             48 PRECALL                  0
+             52 CALL                     0
+             62 STORE_FAST               1 (fields)
+
+ 47          64 LOAD_GLOBAL              5 (NULL + str)
+             76 LOAD_FAST                0 (self)
+             78 LOAD_ATTR                3 (__class__)
+             88 LOAD_ATTR                4 (__name__)
+             98 PRECALL                  1
+            102 CALL                     1
+            112 FORMAT_VALUE             0
+            114 LOAD_CONST               2 ('(')
+            116 LOAD_CONST               3 (', ')
+            118 LOAD_METHOD              5 (join)
+            140 LOAD_FAST                1 (fields)
+            142 PRECALL                  1
+            146 CALL                     1
+            156 FORMAT_VALUE             0
+            158 LOAD_CONST               4 (')')
+            160 BUILD_STRING             4
+            162 RETURN_VALUE
+
+      ### <genexpr> at line 46
+      # varnames: ('.0', 'fld', 'val')
+      # names: ()
+      # const[0]: '='
+ 46           0 RETURN_GENERATOR
+              2 POP_TOP
+              4 RESUME                   0
+              6 LOAD_FAST                0 (.0)
+        >>    8 FOR_ITER                14 (to 38)
+             10 UNPACK_SEQUENCE          2
+             14 STORE_FAST               1 (fld)
+             16 STORE_FAST               2 (val)
+             18 LOAD_FAST                1 (fld)
+             20 FORMAT_VALUE             0
+             22 LOAD_CONST               0 ('=')
+             24 LOAD_FAST                2 (val)
+             26 FORMAT_VALUE             0
+             28 BUILD_STRING             3
+             30 YIELD_VALUE
+             32 RESUME                   1
+             34 POP_TOP
+             36 JUMP_BACKWARD           15 (to 8)
+        >>   38 LOAD_CONST               1 (None)
+             40 RETURN_VALUE
+
+    ### __str__ at line 49
+    # varnames: ('self',)
+    # names: ('major', 'minor', 'patch')
+    # const[1]: '.'
+ 49           0 RESUME                   0
+
+ 50           2 LOAD_FAST                0 (self)
+              4 LOAD_ATTR                0 (major)
+             14 FORMAT_VALUE             0
+             16 LOAD_CONST               1 ('.')
+             18 LOAD_FAST                0 (self)
+             20 LOAD_ATTR                1 (minor)
+             30 FORMAT_VALUE             0
+             32 LOAD_CONST               1 ('.')
+             34 LOAD_FAST                0 (self)
+             36 LOAD_ATTR                2 (patch)
+             46 FORMAT_VALUE             0
+             48 BUILD_STRING             5
+             50 RETURN_VALUE
+
+    ### <lambda> at line 52
+    # varnames: ('self',)
+    # names: ()
+ 52           0 RESUME                   0
+              2 LOAD_FAST                0 (self)
+              4 LOAD_CONST               1 (0)
+              6 BINARY_SUBSCR
+             16 RETURN_VALUE
+
+    ### <lambda> at line 53
+    # varnames: ('self',)
+    # names: ()
+ 53           0 RESUME                   0
+              2 LOAD_FAST                0 (self)
+              4 LOAD_CONST               1 (1)
+              6 BINARY_SUBSCR
+             16 RETURN_VALUE
+
+    ### <lambda> at line 54
+    # varnames: ('self',)
+    # names: ()
+ 54           0 RESUME                   0
+              2 LOAD_FAST                0 (self)
+              4 LOAD_CONST               1 (2)
+              6 BINARY_SUBSCR
+             16 RETURN_VALUE
+
+  ### PygameVersion at line 56
+  # varnames: ()
+  # names: ('__name__', '__module__', '__qualname__', '__doc__')
+  # const[0]: 'PygameVersion'
+  # const[1]: '\n    Pygame Version class.\n    '
+ 56           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('PygameVersion')
+              8 STORE_NAME               2 (__qualname__)
+
+ 57          10 LOAD_CONST               1 ('\n    Pygame Version class.\n    ')
+             12 STORE_NAME               3 (__doc__)
+             14 LOAD_CONST               2 (None)
+             16 RETURN_VALUE
+
+  ### SDLVersion at line 61
+  # varnames: ()
+  # names: ('__name__', '__module__', '__qualname__', '__doc__')
+  # const[0]: 'SDLVersion'
+  # const[1]: '\n    SDL Version class.\n    '
+ 61           0 RESUME                   0
+              2 LOAD_NAME                0 (__name__)
+              4 STORE_NAME               1 (__module__)
+              6 LOAD_CONST               0 ('SDLVersion')
+              8 STORE_NAME               2 (__qualname__)
+
+ 62          10 LOAD_CONST               1 ('\n    SDL Version class.\n    ')
+             12 STORE_NAME               3 (__doc__)
+             14 LOAD_CONST               2 (None)
+             16 RETURN_VALUE
