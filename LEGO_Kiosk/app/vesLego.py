@@ -239,6 +239,8 @@ def draw_ready(scale: float) -> None:
     group_scale = GROUP2_SCALE if rotated else GROUP_SCALE
     if abs(scale * group_scale - 1.0) < 0.001:
         scaled = group
+        scaled_width = group.get_width()
+        scaled_height = group.get_height()
     else:
         scaled_width = max(1, int(group.get_width() * scale * group_scale))
         scaled_height = max(1, int(group.get_height() * scale * group_scale))
